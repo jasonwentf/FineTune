@@ -392,6 +392,23 @@
         }
       }
     },
+    "Also keep them ready on Bluetooth; keeps the link awake": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Also keep them ready on Bluetooth; keeps the link awake"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在蓝牙输出上也保持就绪，链路会持续唤醒"
+          }
+        }
+      }
+    },
     "Amp": {
       "extractionState": "manual",
       "localizations": {
@@ -2602,6 +2619,23 @@
         }
       }
     },
+    "Include Bluetooth Outputs": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Include Bluetooth Outputs"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "包含蓝牙输出"
+          }
+        }
+      }
+    },
     "Initial volume for new apps": {
       "extractionState": "manual",
       "localizations": {
@@ -2734,6 +2768,23 @@
           "stringUnit": {
             "state": "translated",
             "value": "爵士"
+          }
+        }
+      }
+    },
+    "Keep Pinned Apps Ready": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Keep Pinned Apps Ready"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "钉住的应用保持就绪"
           }
         }
       }
@@ -3741,6 +3792,23 @@
         }
       }
     },
+    "Playback Readiness": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Playback Readiness"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "播放就绪"
+          }
+        }
+      }
+    },
     "Podcast": {
       "extractionState": "manual",
       "localizations": {
@@ -3856,6 +3924,23 @@
           "stringUnit": {
             "state": "translated",
             "value": "连接设备时不自动切换"
+          }
+        }
+      }
+    },
+    "Prevents a volume spike when a paused pinned app resumes": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Prevents a volume spike when a paused pinned app resumes"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "暂停的钉住应用恢复播放时不再瞬间爆响"
           }
         }
       }
