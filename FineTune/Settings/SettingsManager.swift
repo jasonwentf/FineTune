@@ -30,6 +30,11 @@ nonisolated struct AppSettings: Codable, Equatable {
     // Audio
     var defaultNewAppVolume: Float = 1.0      // 100% (unity gain)
 
+    // Playback readiness — keeps a pinned app's audio path alive while it is idle, so
+    // resuming playback never leaks raw (unprocessed, unattenuated) audio.
+    var keepPinnedAppsReady: Bool = true           // Pinned apps keep their tap warm when idle
+    var keepReadyOnBluetoothOutputs: Bool = false  // Also keep warm on Bluetooth outputs (keeps the link awake)
+
     // Input Device Lock
     var lockInputDevice: Bool = true          // Prevent auto-switching input device
 
@@ -68,6 +73,8 @@ nonisolated struct AppSettings: Codable, Equatable {
         launchAtLogin = try c.decodeIfPresent(Bool.self, forKey: .launchAtLogin) ?? false
         menuBarIconStyle = try c.decodeIfPresent(MenuBarIconStyle.self, forKey: .menuBarIconStyle) ?? .default
         defaultNewAppVolume = try c.decodeIfPresent(Float.self, forKey: .defaultNewAppVolume) ?? 1.0
+        keepPinnedAppsReady = try c.decodeIfPresent(Bool.self, forKey: .keepPinnedAppsReady) ?? true
+        keepReadyOnBluetoothOutputs = try c.decodeIfPresent(Bool.self, forKey: .keepReadyOnBluetoothOutputs) ?? false
         lockInputDevice = try c.decodeIfPresent(Bool.self, forKey: .lockInputDevice) ?? true
         showDeviceDisconnectAlerts = try c.decodeIfPresent(Bool.self, forKey: .showDeviceDisconnectAlerts) ?? true
         loudnessCompensationEnabled = try c.decodeIfPresent(Bool.self, forKey: .loudnessCompensationEnabled) ?? false

@@ -92,11 +92,11 @@ final class RecordingProcessTapController: ProcessTapControlling {
         events.append(.updateLoudnessEqualization(settings))
     }
 
-    func switchDevice(to newDeviceUID: String, preferredTapSourceDeviceUID: String?, sourceDeviceDead: Bool) async throws {
+    func switchDevice(to newDeviceUID: String, preferredTapSourceDeviceUID: String?, sourceDeviceDead: Bool, autoEQProfile: AutoEQProfile?) async throws {
         currentDeviceUIDs = [newDeviceUID]
     }
 
-    func updateDevices(to newDeviceUIDs: [String], preferredTapSourceDeviceUID: String?, sourceDeviceDead: Bool) async throws {
+    func updateDevices(to newDeviceUIDs: [String], preferredTapSourceDeviceUID: String?, sourceDeviceDead: Bool, autoEQProfile: AutoEQProfile?) async throws {
         currentDeviceUIDs = newDeviceUIDs
     }
 
@@ -336,6 +336,17 @@ struct AudioEngineTapInitialStateTests {
         #expect(snap.autoEQProfileID == nil)
     }
 
+    @Test("non-streaming monitor-reported app is excluded from apps and not pre-tapped")
+    func silentAppIsNotTappedBeforePlayback() throws {
+        let fix = makeFixture()
+        fix.deviceVolume.defaultDeviceUID = fix.device.uid
+
+        fix.engine.applyPersistedSettings()
+
+        #expect(fix.lastTap() == nil)
+        #expect(fix.engine.displayableApps.isEmpty)
+    }
+
     // MARK: Ordering / post-activation behaviour
 
     @Test("activate(initial:) is the first event the controller observes")
@@ -511,5 +522,64 @@ struct RecordingProcessTapControllerContractTests {
         } else {
             Issue.record("activate() did not record an .activate event")
         }
+    }
+}
+
+// MARK: - Tap Keep-Alive Decision
+
+/// A pinned app's tap stays warm while it is idle so resuming playback never leaks
+/// raw audio. The decision is pure, so it is verified here without CoreAudio.
+struct TapKeepAliveDecisionTests {
+    private func keepAlive(
+        isPinned: Bool = true,
+        isProcessPresent: Bool = true,
+        bundleIDMatches: Bool = true,
+        hasBluetoothOutput: Bool = false,
+        keepPinnedAppsReady: Bool = true,
+        keepReadyOnBluetoothOutputs: Bool = false
+    ) -> Bool {
+        AudioEngine.shouldKeepTapAlive(
+            isPinned: isPinned,
+            isProcessPresent: isProcessPresent,
+            bundleIDMatches: bundleIDMatches,
+            hasBluetoothOutput: hasBluetoothOutput,
+            keepPinnedAppsReady: keepPinnedAppsReady,
+            keepReadyOnBluetoothOutputs: keepReadyOnBluetoothOutputs
+        )
+    }
+
+    @Test("pinned idle app keeps its tap")
+    func pinnedIdleAppKeepsTap() {
+        #expect(keepAlive())
+    }
+
+    @Test("unpinned idle app is still cleaned up")
+    func unpinnedIdleAppIsCleanedUp() {
+        #expect(!keepAlive(isPinned: false))
+    }
+
+    @Test("app that quit releases its tap")
+    func quitAppReleasesTap() {
+        #expect(!keepAlive(isProcessPresent: false))
+    }
+
+    @Test("PID reused by a different app releases the old tap")
+    func pidReuseReleasesTap() {
+        #expect(!keepAlive(bundleIDMatches: false))
+    }
+
+    @Test("setting off disables keep-alive entirely")
+    func settingOffDisablesKeepAlive() {
+        #expect(!keepAlive(keepPinnedAppsReady: false))
+    }
+
+    @Test("bluetooth output is excluded by default")
+    func bluetoothOutputExcludedByDefault() {
+        #expect(!keepAlive(hasBluetoothOutput: true))
+    }
+
+    @Test("bluetooth output can be opted in")
+    func bluetoothOutputOptIn() {
+        #expect(keepAlive(hasBluetoothOutput: true, keepReadyOnBluetoothOutputs: true))
     }
 }

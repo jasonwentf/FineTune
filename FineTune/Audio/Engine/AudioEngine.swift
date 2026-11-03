@@ -401,8 +401,12 @@ final class AudioEngine {
         }
     }
 
+    /// Active audio apps that are actively streaming (isRunning=true).
+    /// Non-streaming apps are excluded to avoid creating unnecessary taps
+    /// that waste CPU on silent identity-processed audio (#245).
     var apps: [AudioApp] {
         processMonitor.activeApps
+            .filter { $0.processObjectIDs.contains { $0.readProcessIsRunning() } }
     }
 
     // MARK: - Displayable Apps (Active + Pinned Inactive)
@@ -448,6 +452,9 @@ final class AudioEngine {
     /// Unpin an app by its persistence identifier.
     func unpinApp(_ identifier: String) {
         appListCoordinator.unpinApp(identifier)
+        // The app may be idle-but-kept-alive; release its tap now instead of waiting
+        // for the next app-list change.
+        scheduleStaleCleanup()
     }
 
     /// Check if an app is pinned.
@@ -940,11 +947,13 @@ final class AudioEngine {
         guard let targetUID = appDeviceRouting[app.id] else { return }
         let preferredTapSourceUID = preferredTapSourceDeviceUID(forOutputUIDs: [targetUID], isFollowsDefault: followsDefault.contains(app.id))
         if let tap = taps[app.id] {
-            Task {
+            Task { [weak self] in
+                guard let self else { return }
                 do {
-                    try await tap.switchDevice(to: targetUID, preferredTapSourceDeviceUID: preferredTapSourceUID)
+                    let profile = self.autoEQProfileForActivation(deviceUID: targetUID)
+                    try await tap.switchDevice(to: targetUID, preferredTapSourceDeviceUID: preferredTapSourceUID, autoEQProfile: profile)
                     self.applyTapOutputState(to: tap, for: app.id, deviceUIDs: [targetUID])
-                    self.applyAutoEQToTap(tap)
+                    if profile == nil { self.applyAutoEQToTap(tap) }
                     self.logger.debug("Switched \(app.name) to device: \(targetUID)")
                 } catch {
                     self.logger.error("Failed to switch device for \(app.name): \(error.localizedDescription)")
@@ -1035,11 +1044,12 @@ final class AudioEngine {
             if tap.currentDeviceUIDs != deviceUIDs {
                 do {
                     let preferredTapSourceUID = preferredTapSourceDeviceUID(forOutputUIDs: deviceUIDs, isFollowsDefault: followsDefault.contains(app.id))
-                    try await tap.updateDevices(to: deviceUIDs, preferredTapSourceDeviceUID: preferredTapSourceUID)
+                    let profile = autoEQProfileForActivation(deviceUID: deviceUIDs.first ?? "")
+                    try await tap.updateDevices(to: deviceUIDs, preferredTapSourceDeviceUID: preferredTapSourceUID, autoEQProfile: profile)
                     applyTapOutputState(to: tap, for: app.id, deviceUIDs: deviceUIDs)
+                    if profile == nil { applyAutoEQToTap(tap) }
                     logger.debug("Updated \(app.name) to \(deviceUIDs.count) device(s)")
                 } catch {
-                    logger.error("Failed to update devices for \(app.name): \(error.localizedDescription)")
                 }
             }
         } else {
@@ -1176,11 +1186,13 @@ final class AudioEngine {
             // after the default changed while it was absent), switch it.
             if let existingTap = taps[app.id], existingTap.currentDeviceUIDs != [deviceUID] {
                 let preferredSource = preferredTapSourceDeviceUID(forOutputUIDs: [deviceUID], isFollowsDefault: followsDefault.contains(app.id))
-                Task {
+                Task { [weak self] in
+                    guard let self else { return }
                     do {
-                        try await existingTap.switchDevice(to: deviceUID, preferredTapSourceDeviceUID: preferredSource)
+                        let profile = self.autoEQProfileForActivation(deviceUID: deviceUID)
+                        try await existingTap.switchDevice(to: deviceUID, preferredTapSourceDeviceUID: preferredSource, autoEQProfile: profile)
                         self.applyTapOutputState(to: existingTap, for: app.id, deviceUIDs: [deviceUID])
-                        self.applyAutoEQToTap(existingTap)
+                        if profile == nil { self.applyAutoEQToTap(existingTap) }
                     } catch {
                         self.logger.error("Failed to re-route \(app.name) to \(deviceUID): \(error.localizedDescription)")
                     }
@@ -1319,13 +1331,15 @@ final class AudioEngine {
         }
         guard !tapsToSwitch.isEmpty else { return }
 
-        Task {
+        Task { [weak self] in
+            guard let self else { return }
+            let profile = self.autoEQProfileForActivation(deviceUID: targetUID)
             for (app, tap) in tapsToSwitch {
                 do {
                     let preferredTapSourceUID = self.preferredTapSourceDeviceUID(forOutputUIDs: [targetUID], isFollowsDefault: true)
-                    try await tap.switchDevice(to: targetUID, preferredTapSourceDeviceUID: preferredTapSourceUID)
+                    try await tap.switchDevice(to: targetUID, preferredTapSourceDeviceUID: preferredTapSourceUID, autoEQProfile: profile)
                     self.applyTapOutputState(to: tap, for: app.id, deviceUIDs: [targetUID])
-                    self.applyAutoEQToTap(tap)
+                    if profile == nil { self.applyAutoEQToTap(tap) }
                 } catch {
                     self.logger.error("Failed to switch \(app.name) to \(targetUID): \(error.localizedDescription)")
                 }
@@ -1398,14 +1412,16 @@ final class AudioEngine {
 
         // Execute device switches
         if !singleModeTapsToSwitch.isEmpty || !multiModeTapsToUpdate.isEmpty {
-            Task {
+            Task { [weak self] in
+                guard let self else { return }
                 // Handle single-mode switches — source device is dead, skip crossfade
                 for (tap, fallbackUID) in singleModeTapsToSwitch {
                     do {
                         let preferredTapSourceUID = self.preferredTapSourceDeviceUID(forOutputUIDs: [fallbackUID], isFollowsDefault: true)
-                        try await tap.switchDevice(to: fallbackUID, preferredTapSourceDeviceUID: preferredTapSourceUID, sourceDeviceDead: true)
+                        let profile = self.autoEQProfileForActivation(deviceUID: fallbackUID)
+                        try await tap.switchDevice(to: fallbackUID, preferredTapSourceDeviceUID: preferredTapSourceUID, sourceDeviceDead: true, autoEQProfile: profile)
                         self.applyTapOutputState(to: tap, for: tap.app.id, deviceUIDs: [fallbackUID])
-                        self.applyAutoEQToTap(tap)
+                        if profile == nil { self.applyAutoEQToTap(tap) }
                     } catch {
                         self.logger.error("Failed to switch \(tap.app.name) to fallback: \(error.localizedDescription)")
                     }
@@ -1416,11 +1432,12 @@ final class AudioEngine {
                 for (tap, remainingUIDs) in multiModeTapsToUpdate {
                     do {
                         let preferredTapSourceUID = self.preferredTapSourceDeviceUID(forOutputUIDs: remainingUIDs, isFollowsDefault: self.followsDefault.contains(tap.app.id))
-                        try await tap.updateDevices(to: remainingUIDs, preferredTapSourceDeviceUID: preferredTapSourceUID, sourceDeviceDead: true)
+                        let profile = self.autoEQProfileForActivation(deviceUID: remainingUIDs.first ?? "")
+                        try await tap.updateDevices(to: remainingUIDs, preferredTapSourceDeviceUID: preferredTapSourceUID, sourceDeviceDead: true, autoEQProfile: profile)
                         self.applyTapOutputState(to: tap, for: tap.app.id, deviceUIDs: remainingUIDs)
+                        if profile == nil { self.applyAutoEQToTap(tap) }
                         self.logger.debug("Removed \(deviceName) from \(tap.app.name) multi-device output")
                     } catch {
-                        self.logger.error("Failed to update \(tap.app.name) devices: \(error.localizedDescription)")
                     }
                 }
             }
@@ -1471,13 +1488,15 @@ final class AudioEngine {
         }
 
         if !tapsToSwitch.isEmpty {
-            Task {
+            Task { [weak self] in
+                guard let self else { return }
+                let profile = self.autoEQProfileForActivation(deviceUID: deviceUID)
                 for tap in tapsToSwitch {
                     do {
                         let preferredTapSourceUID = self.preferredTapSourceDeviceUID(forOutputUIDs: [deviceUID], isFollowsDefault: false)
-                        try await tap.switchDevice(to: deviceUID, preferredTapSourceDeviceUID: preferredTapSourceUID)
+                        try await tap.switchDevice(to: deviceUID, preferredTapSourceDeviceUID: preferredTapSourceUID, autoEQProfile: profile)
                         self.applyTapOutputState(to: tap, for: tap.app.id, deviceUIDs: [deviceUID])
-                        self.applyAutoEQToTap(tap)
+                        if profile == nil { self.applyAutoEQToTap(tap) }
                     } catch {
                         self.logger.error("Failed to switch \(tap.app.name) back to \(deviceName): \(error.localizedDescription)")
                     }
@@ -1801,8 +1820,73 @@ final class AudioEngine {
         return outputUIDs.contains(defaultUID) ? defaultUID : nil
     }
 
+    /// Decides whether an idle tap should be kept alive so the app resumes through an
+    /// existing, already-gated audio path instead of leaking raw audio while a new tap is
+    /// built. Pure (no CoreAudio) so it can be unit-tested.
+    nonisolated static func shouldKeepTapAlive(
+        isPinned: Bool,
+        isProcessPresent: Bool,
+        bundleIDMatches: Bool,
+        hasBluetoothOutput: Bool,
+        keepPinnedAppsReady: Bool,
+        keepReadyOnBluetoothOutputs: Bool
+    ) -> Bool {
+        // The process must still exist and be the same app — PID reuse must not keep a
+        // stale tap (and its aggregate device) alive.
+        guard keepPinnedAppsReady, isPinned, isProcessPresent, bundleIDMatches else { return false }
+
+        // A running tap keeps the link awake and pins A2DP, which makes Bluetooth
+        // headphones drain and misbehave. Opt-in only.
+        if hasBluetoothOutput && !keepReadyOnBluetoothOutputs { return false }
+
+        return true
+    }
+
+    /// PIDs whose taps must survive their app going idle (not streaming).
+    ///
+    /// Pinned apps keep their tap — and therefore their routed, volume-gated path — warm.
+    /// That closes the window where resuming playback bypasses FineTune entirely: the app
+    /// renders straight to the device at full level until a new tap is built.
+    private func keepAlivePIDs() -> Set<pid_t> {
+        let appSettings = settingsManager.appSettings
+        guard appSettings.keepPinnedAppsReady else { return [] }
+
+        let liveAppsByPID = Dictionary(
+            processMonitor.activeApps.map { ($0.id, $0) },
+            uniquingKeysWith: { _, latest in latest }
+        )
+
+        var pids: Set<pid_t> = []
+        for (pid, tap) in taps {
+            let liveApp = liveAppsByPID[pid]
+            let hasBluetoothOutput = tap.currentDeviceUIDs.contains { uid in
+                guard let device = deviceMonitor.device(for: uid) else { return false }
+                let transport = device.id.readTransportType()
+                return transport == .bluetooth || transport == .bluetoothLE
+            }
+
+            if Self.shouldKeepTapAlive(
+                isPinned: appListCoordinator.isPinned(identifier: tap.app.persistenceIdentifier),
+                isProcessPresent: liveApp != nil,
+                bundleIDMatches: liveApp?.bundleID == tap.app.bundleID,
+                hasBluetoothOutput: hasBluetoothOutput,
+                keepPinnedAppsReady: appSettings.keepPinnedAppsReady,
+                keepReadyOnBluetoothOutputs: appSettings.keepReadyOnBluetoothOutputs
+            ) {
+                pids.insert(pid)
+            }
+        }
+        return pids
+    }
+
+    /// Re-evaluates keep-alive immediately (e.g. after the user toggles the setting).
+    func refreshKeepAliveState() {
+        scheduleStaleCleanup()
+    }
+
     private func cleanupStaleTaps() {
-        let activePIDs = Set(apps.map { $0.id })
+        // Idle-but-kept-alive taps are treated as active so they are never scheduled for teardown.
+        let activePIDs = Set(apps.map { $0.id }).union(keepAlivePIDs())
         let stalePIDs = Set(taps.keys).subtracting(activePIDs)
 
         // Cancel cleanup for PIDs that reappeared — but only if bundleID matches.
@@ -1842,7 +1926,8 @@ final class AudioEngine {
 
                 // Double-check still stale
                 let currentPIDs = Set(self.apps.map { $0.id })
-                guard !currentPIDs.contains(pid) else {
+                let keepAlive = self.keepAlivePIDs()
+                if currentPIDs.contains(pid) || keepAlive.contains(pid) {
                     self.pendingCleanup.removeValue(forKey: pid)
                     return
                 }
@@ -1905,8 +1990,10 @@ final class AudioEngine {
                     guard tap.isHealthCheckEligible(minActiveSeconds: 5.0) else { continue }
 
                     // Only health-check apps that are actively streaming (isRunning=true).
-                    // Paused apps have no callbacks, which is normal — not a health signal.
-                    let isActivelyStreaming = self.processMonitor.activeApps.contains { $0.id == pid }
+                    // Paused apps can still be present in activeApps for proactive tap setup,
+                    // but no callbacks while paused is normal — not a health signal.
+                    let isActivelyStreaming = self.apps.first { $0.id == pid }?
+                        .processObjectIDs.contains { $0.readProcessIsRunning() } ?? false
                     guard isActivelyStreaming else {
                         consecutiveMisses[pid] = 0
                         continue
