@@ -1,0 +1,82 @@
+name: Build FineTune (unsigned)
+
+on:
+  workflow_dispatch:
+    inputs:
+      pr:
+        description: Pull request number to merge into main
+        required: true
+        default: "409"
+      version:
+        description: Marketing version to stamp
+        required: true
+        default: "1.9.1"
+
+jobs:
+  build:
+    runs-on: macos-26
+    timeout-minutes: 45
+    steps:
+      - name: Checkout upstream
+        uses: actions/checkout@v4
+        with:
+          repository: ronitsingh10/FineTune
+          path: src
+          fetch-depth: 0
+
+      - name: Merge pull request ${{ inputs.pr }}
+        working-directory: src
+        run: |
+          git fetch origin "pull/${{ inputs.pr }}/head:pr-${{ inputs.pr }}"
+          git config user.name "build-bot"
+          git config user.email "build-bot@users.noreply.github.com"
+          git merge --no-edit "pr-${{ inputs.pr }}" -m "Merge PR #${{ inputs.pr }}"
+          echo "--- merged tree ---"
+          git log --oneline -3
+          git diff --stat HEAD~1 HEAD
+
+      - name: Setup Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      - name: Stamp version ${{ inputs.version }}
+        working-directory: src
+        run: |
+          sed -i '' "s/MARKETING_VERSION = [^;]*/MARKETING_VERSION = ${{ inputs.version }}/g" FineTune.xcodeproj/project.pbxproj
+          sed -i '' "s/CURRENT_PROJECT_VERSION = [^;]*/CURRENT_PROJECT_VERSION = 39/g" FineTune.xcodeproj/project.pbxproj
+          grep -c "MARKETING_VERSION = ${{ inputs.version }}" FineTune.xcodeproj/project.pbxproj
+
+      - name: Build (unsigned)
+        working-directory: src
+        run: |
+          set -o pipefail
+          xcodebuild \
+            -project FineTune.xcodeproj \
+            -scheme FineTune \
+            -configuration Release \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO \
+            build 2>&1 | tail -120
+
+      - name: Verify and ad-hoc sign
+        working-directory: src
+        run: |
+          APP="build/Build/Products/Release/FineTune.app"
+          test -d "$APP"
+          echo "version: $(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$APP/Contents/Info.plist")"
+          echo "build:   $(/usr/libexec/PlistBuddy -c 'Print :CFBundleVersion' "$APP/Contents/Info.plist")"
+          codesign --force --deep --sign - --options runtime \
+            --entitlements FineTune/FineTune.entitlements "$APP"
+          codesign -dv --verbose=4 "$APP" 2>&1 | head -10
+          echo "--- frameworks ---"
+          ls "$APP/Contents/Frameworks" || true
+          ditto -c -k --keepParent "$APP" "FineTune-${{ inputs.version }}.zip"
+          ls -lh "FineTune-${{ inputs.version }}.zip"
+
+      - name: Upload app
+        uses: actions/upload-artifact@v4
+        with:
+          name: FineTune-${{ inputs.version }}-app
+          path: src/FineTune-${{ inputs.version }}.zip
+          retention-days: 14
