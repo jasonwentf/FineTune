@@ -37,7 +37,11 @@ struct DeviceInspectorFormatterTests {
         var asbd = AudioStreamBasicDescription()
         asbd.mFormatID = kAudioFormatLinearPCM
         asbd.mBitsPerChannel = 24
-        #expect(DeviceInspectorInfo.formatPhysicalFormat(asbd) == "24-bit PCM")
+        // The label is localized, so assert the composition (depth + codec) rather than
+        // the English wording.
+        let result = DeviceInspectorInfo.formatPhysicalFormat(asbd)
+        #expect(result?.contains("24") == true)
+        #expect(result?.contains("PCM") == true)
     }
 
     @Test("formatPhysicalFormat returns nil for non-LPCM streams")
@@ -73,20 +77,23 @@ struct DeviceInspectorFormatterTests {
 
     @Test("formatHogModeOwner returns resolved name when provided")
     func hogWithName() {
+        // Localized wording varies by language; assert the interpolated values survive.
         let result = DeviceInspectorInfo.formatHogModeOwner(1234, processName: "Audirvana")
-        #expect(result == "In exclusive use by Audirvana (PID 1234)")
+        #expect(result?.contains("Audirvana") == true)
+        #expect(result?.contains("1234") == true)
     }
 
     @Test("formatHogModeOwner falls back to PID-only when name is nil")
     func hogWithoutName() {
         let result = DeviceInspectorInfo.formatHogModeOwner(5678, processName: nil)
-        #expect(result == "In exclusive use by PID 5678")
+        #expect(result?.contains("5678") == true)
+        #expect(result?.contains("Audirvana") == false)
     }
 
     @Test("formatHogModeOwner falls back to PID-only when name is empty")
     func hogWithEmptyName() {
         let result = DeviceInspectorInfo.formatHogModeOwner(5678, processName: "")
-        #expect(result == "In exclusive use by PID 5678")
+        #expect(result?.contains("5678") == true)
     }
 }
 

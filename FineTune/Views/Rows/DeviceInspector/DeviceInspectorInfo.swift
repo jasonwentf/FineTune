@@ -52,10 +52,13 @@ nonisolated extension DeviceInspectorInfo {
     /// Returns nil when the device is not held exclusively by another process.
     static func formatHogModeOwner(_ owner: pid_t, processName: String?) -> String? {
         guard owner > 0, owner != getpid() else { return nil }
+        // Pre-render the PID: localized integer interpolation applies number grouping,
+        // which turns 5678 into "5,678" — wrong for a process ID.
+        let pidText = String(owner)
         if let processName, !processName.isEmpty {
-            return String(localized: "In exclusive use by \(processName) (PID \(owner))")
+            return String(localized: "In exclusive use by \(processName) (PID \(pidText))")
         }
-        return String(localized: "In exclusive use by PID \(owner)")
+        return String(localized: "In exclusive use by PID \(pidText)")
     }
 }
 

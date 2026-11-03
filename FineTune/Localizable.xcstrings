@@ -2585,36 +2585,36 @@
         }
       }
     },
-    "In exclusive use by %@ (PID %d)": {
+    "In exclusive use by %@ (PID %@)": {
       "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "In exclusive use by %@ (PID %d)"
+            "value": "In exclusive use by %@ (PID %@)"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "被 %@ 独占 (PID %d)"
+            "value": "被 %@ 独占 (PID %@)"
           }
         }
       }
     },
-    "In exclusive use by PID %d": {
+    "In exclusive use by PID %@": {
       "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "In exclusive use by PID %d"
+            "value": "In exclusive use by PID %@"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "被 PID %d 独占"
+            "value": "被 PID %@ 独占"
           }
         }
       }

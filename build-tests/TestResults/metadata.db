@@ -13,42 +13,42 @@
 				<key>deduplicatesSubDevices</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7951030731201172</real>
+					<real>1.2407341003417969</real>
 				</dict>
 				<key>emptyAggregateTreatedAsPlain</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7950088977813721</real>
+					<real>1.2408092021942139</real>
 				</dict>
 				<key>mirroringWithAggregate</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7778677940368652</real>
+					<real>1.2406749725341797</real>
 				</dict>
 				<key>multiDeviceMirroring</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7778868675231934</real>
+					<real>1.2407207489013672</real>
 				</dict>
 				<key>singleAggregateFlattened</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7778539657592773</real>
+					<real>1.2407150268554688</real>
 				</dict>
 				<key>singleAggregateMultiStreamDevice</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.763200044631958</real>
+					<real>1.2407169342041016</real>
 				</dict>
 				<key>singleAggregateMultipleSubDevices</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7632009983062744</real>
+					<real>1.2405717372894287</real>
 				</dict>
 				<key>singlePlainDevice</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7631919384002686</real>
+					<real>1.2407469749450684</real>
 				</dict>
 			</dict>
 			<key>AppSettingsCustomShortcutsTests</key>
@@ -56,12 +56,12 @@
 				<key>defaultsEmpty</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84904813766479492</real>
+					<real>1.0826611518859863</real>
 				</dict>
 				<key>roundTrip</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84899210929870605</real>
+					<real>1.0501019954681396</real>
 				</dict>
 			</dict>
 			<key>AppSettingsDefaultTests</key>
@@ -69,42 +69,42 @@
 				<key>defaults</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235617637634277</real>
+					<real>0.76519298553466797</real>
 				</dict>
 				<key>loudnessEqualizationEnabledDefault</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235686779022217</real>
+					<real>0.76647019386291504</real>
 				</dict>
 				<key>loudnessEqualizationEnabledPersistence</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.090023040771484375</real>
+					<real>0.062325000762939453</real>
 				</dict>
 				<key>loudnessEqualizationEnabledRoundTrip</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235631942749023</real>
+					<real>0.76694393157958984</real>
 				</dict>
 				<key>unifiedLoudnessToggleSetsBothFlags</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235660552978516</real>
+					<real>0.7652430534362793</real>
 				</dict>
 				<key>volumeHotkeyStepDefault</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235851287841797</real>
+					<real>0.76534390449523926</real>
 				</dict>
 				<key>volumeHotkeyStepMissingKeyDefault</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235350608825684</real>
+					<real>0.76535701751708984</real>
 				</dict>
 				<key>volumeHotkeyStepRoundTrip</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7236011028289795</real>
+					<real>0.76195478439331055</real>
 				</dict>
 			</dict>
 			<key>AppearancePreferenceCodableTests</key>
@@ -112,57 +112,57 @@
 				<key>allCasesCount</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94076204299926758</real>
+					<real>1.2238249778747559</real>
 				</dict>
 				<key>appSettingsAppearanceDarkRoundTrip</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.036886930465698242</real>
+					<real>0.063417911529541016</real>
 				</dict>
 				<key>appSettingsAppearanceDefault</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94100785255432129</real>
+					<real>1.2237429618835449</real>
 				</dict>
 				<key>appSettingsAppearanceLightRoundTrip</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.036755084991455078</real>
+					<real>0.063532829284667969</real>
 				</dict>
 				<key>darkRawEncoding</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.9410402774810791</real>
+					<real>1.2238337993621826</real>
 				</dict>
 				<key>idMatchesRawValue</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94105124473571777</real>
+					<real>1.2238819599151611</real>
 				</dict>
 				<key>lightRawEncoding</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94102597236633301</real>
+					<real>1.2239961624145508</real>
 				</dict>
 				<key>missingAppearanceProducesSystemDefault</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.036862850189208984</real>
+					<real>0.063418388366699219</real>
 				</dict>
 				<key>roundTripAllCases</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94092297554016113</real>
+					<real>1.2237610816955566</real>
 				</dict>
 				<key>settingsManagerAppearanceRoundTrip</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.036881923675537109</real>
+					<real>0.063462018966674805</real>
 				</dict>
 				<key>systemRawEncoding</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94104194641113281</real>
+					<real>1.2238798141479492</real>
 				</dict>
 			</dict>
 			<key>AppearancePreferenceMappingTests</key>
@@ -170,32 +170,32 @@
 				<key>darkColorScheme</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7236571311950684</real>
+					<real>0.76154637336730957</real>
 				</dict>
 				<key>darkNSAppearance</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237429618835449</real>
+					<real>0.75861787796020508</real>
 				</dict>
 				<key>lightColorScheme</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235679626464844</real>
+					<real>0.76155304908752441</real>
 				</dict>
 				<key>lightNSAppearance</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7236738204956055</real>
+					<real>0.75472688674926758</real>
 				</dict>
 				<key>systemColorScheme</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235960960388184</real>
+					<real>0.76156067848205566</real>
 				</dict>
 				<key>systemNSAppearance</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7236440181732178</real>
+					<real>0.76139187812805176</real>
 				</dict>
 			</dict>
 			<key>AudioDeviceIconSymbolTests</key>
@@ -203,7 +203,7 @@
 				<key>cascadeOrdering</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7239699363708496</real>
+					<real>1.2404367923736572</real>
 				</dict>
 			</dict>
 			<key>AudioDeviceInspectorPropertiesTests</key>
@@ -211,27 +211,27 @@
 				<key>availableSampleRates</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7318649291992188</real>
+					<real>0.76705765724182129</real>
 				</dict>
 				<key>hogModeUnowned</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.732001781463623</real>
+					<real>0.76696085929870605</real>
 				</dict>
 				<key>physicalFormat</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7320230007171631</real>
+					<real>0.78159117698669434</real>
 				</dict>
 				<key>settableRealSelector</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7240209579467773</real>
+					<real>0.76512718200683594</real>
 				</dict>
 				<key>settableRobustness</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7318770885467529</real>
+					<real>0.76616883277893066</real>
 				</dict>
 			</dict>
 			<key>AudioEngineTapInitialStateTests</key>
@@ -239,52 +239,52 @@
 				<key>activateIsFirstEvent</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.0464329719543457</real>
+					<real>1.0501399040222168</real>
 				</dict>
 				<key>autoEQNilForUnsupportedDevice</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.0120999813079834</real>
+					<real>0.98549199104309082</real>
 				</dict>
 				<key>autoEQNilWhenProfileNotCached</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.130681037902832</real>
+					<real>0.80811524391174316</real>
 				</dict>
 				<key>autoEQNilWhenSelectionDisabled</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.063694953918457</real>
+					<real>0.79102683067321777</real>
 				</dict>
 				<key>autoEQNilWithNoSelection</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.9786531925201416</real>
+					<real>0.88893771171569824</real>
 				</dict>
 				<key>cacheMissTriggersPostActivateNilSet</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.0293762683868408</real>
+					<real>0.93752288818359375</real>
 				</dict>
 				<key>eqSettingsAreCarried</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1824288368225098</real>
+					<real>0.90514612197875977</real>
 				</dict>
 				<key>loudnessVolumeIsProduct</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.0805351734161377</real>
+					<real>0.92118597030639648</real>
 				</dict>
 				<key>noMutationBeforeActivate</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.4717879295349121</real>
+					<real>0.96943497657775879</real>
 				</dict>
 				<key>silentAppIsNotTappedBeforePlayback</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.0974628925323486</real>
+					<real>1.0177209377288818</real>
 				</dict>
 			</dict>
 			<key>AudioEngineToggleMuteTests</key>
@@ -292,22 +292,22 @@
 				<key>isAudibleNowReturnsFalseForUnknownBundle</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7632079124450684</real>
+					<real>1.0826282501220703</real>
 				</dict>
 				<key>isAudibleNowReturnsFalseWhenNoProcessObjects</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7630901336669922</real>
+					<real>1.0664031505584717</real>
 				</dict>
 				<key>toggleMutedToUnmuted</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7950623035430908</real>
+					<real>1.0339059829711914</real>
 				</dict>
 				<key>toggleUnmutedToMuted</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7779548168182373</real>
+					<real>1.0992679595947266</real>
 				</dict>
 			</dict>
 			<key>BTCallModeTransitionTests</key>
@@ -315,17 +315,17 @@
 				<key>firesOnChange</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7239911556243896</real>
+					<real>0.76706600189208984</real>
 				</dict>
 				<key>noFireOnSameRate</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7240240573883057</real>
+					<real>0.76704716682434082</real>
 				</dict>
 				<key>transientZeroNeverFires</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.723829984664917</real>
+					<real>0.76707100868225098</real>
 				</dict>
 			</dict>
 			<key>BiquadMathAllBandsTests</key>
@@ -333,17 +333,17 @@
 				<key>nyquistBypass</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7241060733795166</real>
+					<real>1.2236580848693848</real>
 				</dict>
 				<key>returns50Coefficients</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7240149974822998</real>
+					<real>1.2237241268157959</real>
 				</dict>
 				<key>wrongBandCountReturnsUnity</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7320582866668701</real>
+					<real>1.223581075668335</real>
 				</dict>
 			</dict>
 			<key>BiquadMathBoundaryTests</key>
@@ -351,62 +351,62 @@
 				<key>allFlatGainsNearUnity</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.182304859161377</real>
+					<real>0.76130771636962891</real>
 				</dict>
 				<key>autoEQEmptyFilters</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1825931072235107</real>
+					<real>0.76223301887512207</real>
 				</dict>
 				<key>autoEQMixedTypes</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1821532249450684</real>
+					<real>0.76224017143249512</real>
 				</dict>
 				<key>autoEQNyquistBypass</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1822106838226318</real>
+					<real>0.76215219497680664</real>
 				</dict>
 				<key>bluetoothHFPBypass</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1825721263885498</real>
+					<real>0.76212692260742188</real>
 				</dict>
 				<key>noPreWarpWhenRatesClose</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.182136058807373</real>
+					<real>0.7614903450012207</real>
 				</dict>
 				<key>preWarpChangesCoefficients</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1826798915863037</real>
+					<real>0.76219296455383301</real>
 				</dict>
 				<key>preWarpDirectionality</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1821491718292236</real>
+					<real>0.76214098930358887</real>
 				</dict>
 				<key>preWarpNearNyquist</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1822109222412109</real>
+					<real>0.76217484474182129</real>
 				</dict>
 				<key>preWarpNegativeFrequencyBypass</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1827099323272705</real>
+					<real>0.76217532157897949</real>
 				</dict>
 				<key>preWarpRoundTrip</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1823391914367676</real>
+					<real>0.76218295097351074</real>
 				</dict>
 				<key>veryLowSampleRateBypass</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1822028160095215</real>
+					<real>0.76215696334838867</real>
 				</dict>
 			</dict>
 			<key>BiquadMathPeakingTests</key>
@@ -414,32 +414,32 @@
 				<key>allFinite</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.8489539623260498</real>
+					<real>1.2084250450134277</real>
 				</dict>
 				<key>coefficientCount</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.86619806289672852</real>
+					<real>1.1412889957427979</real>
 				</dict>
 				<key>negativeGainCuts</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84892606735229492</real>
+					<real>1.1412808895111084</real>
 				</dict>
 				<key>positiveGainBoosts</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.8490300178527832</real>
+					<real>1.1412808895111084</real>
 				</dict>
 				<key>sampleRateAffectsCoefficients</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84897589683532715</real>
+					<real>1.1410789489746094</real>
 				</dict>
 				<key>zeroGainIsUnity</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84897017478942871</real>
+					<real>1.141287088394165</real>
 				</dict>
 			</dict>
 			<key>BiquadMathPoleStabilityTests</key>
@@ -447,27 +447,27 @@
 				<key>frequencyZeroMarginallyStable</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7953188419342041</real>
+					<real>1.2210128307342529</real>
 				</dict>
 				<key>highShelfExhaustiveGrid</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7953240871429443</real>
+					<real>1.2210121154785156</real>
 				</dict>
 				<key>lowShelfExhaustiveGrid</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7953228950500488</real>
+					<real>1.2210121154785156</real>
 				</dict>
 				<key>peakingExhaustiveGrid</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7953391075134277</real>
+					<real>1.2210090160369873</real>
 				</dict>
 				<key>worstCaseCombination</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7953441143035889</real>
+					<real>1.5417759418487549</real>
 				</dict>
 			</dict>
 			<key>BiquadMathPreWarpTests</key>
@@ -475,27 +475,27 @@
 				<key>finiteResult</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7236018180847168</real>
+					<real>1.2403569221496582</real>
 				</dict>
 				<key>highFrequencyLargerShift</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.723557710647583</real>
+					<real>1.2402858734130859</real>
 				</dict>
 				<key>lowFrequencyMinimalShift</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.723581075668335</real>
+					<real>1.2402901649475098</real>
 				</dict>
 				<key>positiveResult</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7236378192901611</real>
+					<real>1.2402889728546143</real>
 				</dict>
 				<key>sameRateIdentity</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.723567008972168</real>
+					<real>1.2406082153320312</real>
 				</dict>
 			</dict>
 			<key>BiquadMathShelfTests</key>
@@ -503,22 +503,22 @@
 				<key>highShelfPositiveGain</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237088680267334</real>
+					<real>1.0664701461791992</real>
 				</dict>
 				<key>highShelfZeroGain</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237110137939453</real>
+					<real>1.0501129627227783</real>
 				</dict>
 				<key>lowShelfPositiveGain</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237598896026611</real>
+					<real>1.0177409648895264</real>
 				</dict>
 				<key>lowShelfZeroGain</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237339019775391</real>
+					<real>1.0177059173583984</real>
 				</dict>
 			</dict>
 			<key>BiquadProcessorBypassSignalTests</key>
@@ -526,17 +526,17 @@
 				<key>disabledPassthrough</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235598564147949</real>
+					<real>1.6939921379089355</real>
 				</dict>
 				<key>inPlaceProcessing</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235639095306396</real>
+					<real>1.6947021484375</real>
 				</dict>
 				<key>nilSetupPassthrough</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.723574161529541</real>
+					<real>1.6942019462585449</real>
 				</dict>
 			</dict>
 			<key>BiquadProcessorFlatEQSignalTests</key>
@@ -544,7 +544,7 @@
 				<key>flatEQPreservesWaveform</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7236058712005615</real>
+					<real>1.0988569259643555</real>
 				</dict>
 			</dict>
 			<key>BiquadProcessorNaNSafetyTests</key>
@@ -552,7 +552,7 @@
 				<key>nanFirstSampleZerosOutput</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84888172149658203</real>
+					<real>1.5891139507293701</real>
 				</dict>
 			</dict>
 			<key>BiquadProcessorPeakingSignalTests</key>
@@ -560,22 +560,22 @@
 				<key>peaking12dBAt1kHz_boosts1kHz</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.8492271900177002</real>
+					<real>1.2238290309906006</real>
 				</dict>
 				<key>peaking12dBAt1kHz_doesNotAffect100Hz</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.8492438793182373</real>
+					<real>1.2402932643890381</real>
 				</dict>
 				<key>peaking12dBStereoSymmetry</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84929680824279785</real>
+					<real>1.2403347492218018</real>
 				</dict>
 				<key>peakingCut12dBAt1kHz</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84926199913024902</real>
+					<real>1.240333080291748</real>
 				</dict>
 			</dict>
 			<key>BiquadProcessorSafetyTests</key>
@@ -583,27 +583,27 @@
 				<key>disabledPassthrough</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84916114807128906</real>
+					<real>1.6960830688476562</real>
 				</dict>
 				<key>inPlaceProcessing</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84917879104614258</real>
+					<real>1.6961088180541992</real>
 				</dict>
 				<key>nanInputSafetyNet</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84921789169311523</real>
+					<real>1.693723201751709</real>
 				</dict>
 				<key>nilSetupPassthrough</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84928107261657715</real>
+					<real>1.696218729019165</real>
 				</dict>
 				<key>setupSwapToNil</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84925103187561035</real>
+					<real>1.6961750984191895</real>
 				</dict>
 			</dict>
 			<key>BiquadProcessorSampleRateTests</key>
@@ -611,7 +611,7 @@
 				<key>bluetoothHFPSignalTest</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.794985294342041</real>
+					<real>0.76691293716430664</real>
 				</dict>
 			</dict>
 			<key>BiquadProcessorShelfSignalTests</key>
@@ -619,27 +619,27 @@
 				<key>highShelfBoost</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.95848679542541504</real>
+					<real>1.2210111618041992</real>
 				</dict>
 				<key>highShelfCuts16kHz</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94087910652160645</real>
+					<real>1.2210390567779541</real>
 				</dict>
 				<key>highShelfDoesNotAffect100Hz</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.99547910690307617</real>
+					<real>1.2213840484619141</real>
 				</dict>
 				<key>lowShelfBoosts50Hz</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94073915481567383</real>
+					<real>1.2214009761810303</real>
 				</dict>
 				<key>lowShelfDoesNotAffect8kHz</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94077110290527344</real>
+					<real>1.2210116386413574</real>
 				</dict>
 			</dict>
 			<key>BoostLevelTests</key>
@@ -647,22 +647,22 @@
 				<key>allCasesCount</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7240962982177734</real>
+					<real>0.76672673225402832</real>
 				</dict>
 				<key>initFromRawValue</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.724478006362915</real>
+					<real>0.7828819751739502</real>
 				</dict>
 				<key>isBoosted</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7240190505981445</real>
+					<real>0.7668309211730957</real>
 				</dict>
 				<key>nextCycles</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7317929267883301</real>
+					<real>0.78274703025817871</real>
 				</dict>
 			</dict>
 			<key>BoundaryFrameCountTests</key>
@@ -670,17 +670,17 @@
 				<key>largeFrameCount</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.795490026473999</real>
+					<real>1.2237350940704346</real>
 				</dict>
 				<key>singleFrameProcessing</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7950208187103271</real>
+					<real>1.2237582206726074</real>
 				</dict>
 				<key>twoFrameProcessing</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7949898242950439</real>
+					<real>1.2238218784332275</real>
 				</dict>
 			</dict>
 			<key>BufferMappingTests</key>
@@ -688,52 +688,52 @@
 				<key>asymmetricBufferOffsetMapping</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237052917480469</real>
+					<real>1.2401618957519531</real>
 				</dict>
 				<key>fourInputTwoOutput</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.723858118057251</real>
+					<real>1.2238709926605225</real>
 				</dict>
 				<key>inputIndexOutOfBounds</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7238922119140625</real>
+					<real>1.2238059043884277</real>
 				</dict>
 				<key>monoDirectMapping</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7234530448913574</real>
+					<real>1.240192174911499</real>
 				</dict>
 				<key>monoToStereoUpmix</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235326766967773</real>
+					<real>1.2401297092437744</real>
 				</dict>
 				<key>stereoDirectMapping</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235069274902344</real>
+					<real>1.2238101959228516</real>
 				</dict>
 				<key>stereoToChannels3and4</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235231399536133</real>
+					<real>1.2401349544525146</real>
 				</dict>
 				<key>stereoToSurroundMapping</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.723477840423584</real>
+					<real>1.2211060523986816</real>
 				</dict>
 				<key>surroundDirectMapping</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7234899997711182</real>
+					<real>1.2238419055938721</real>
 				</dict>
 				<key>zeroFrameBuffer</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235181331634521</real>
+					<real>1.2238681316375732</real>
 				</dict>
 			</dict>
 			<key>ClassicStyleHUDStructureTests</key>
@@ -741,7 +741,7 @@
 				<key>classicHasNoPercentageLabel</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235479354858398</real>
+					<real>0.76213288307189941</real>
 				</dict>
 			</dict>
 			<key>CrossfadeEqualPowerTests</key>
@@ -749,22 +749,22 @@
 				<key>primaryMonotonicallyDecreases</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7244060039520264</real>
+					<real>1.6943361759185791</real>
 				</dict>
 				<key>progressOneBoundary</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7245218753814697</real>
+					<real>1.6693601608276367</real>
 				</dict>
 				<key>progressZeroBoundary</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7239348888397217</real>
+					<real>1.6946327686309814</real>
 				</dict>
 				<key>secondaryMonotonicallyIncreases</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7240869998931885</real>
+					<real>1.6941897869110107</real>
 				</dict>
 			</dict>
 			<key>CrossfadeIdleTests</key>
@@ -772,17 +772,17 @@
 				<key>idleNormalState</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94107294082641602</real>
+					<real>1.6228759288787842</real>
 				</dict>
 				<key>idlePostCrossfadeWindow</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94104599952697754</real>
+					<real>1.6939249038696289</real>
 				</dict>
 				<key>warmupSamplesReasonable</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94106626510620117</real>
+					<real>1.6940498352050781</real>
 				</dict>
 			</dict>
 			<key>CrossfadePhaseTransitionTests</key>
@@ -790,32 +790,32 @@
 				<key>doubleComplete</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7240228652954102</real>
+					<real>1.0988807678222656</real>
 				</dict>
 				<key>fullLifecycle</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7242131233215332</real>
+					<real>1.0989372730255127</real>
 				</dict>
 				<key>idleAfterComplete</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7234458923339844</real>
+					<real>1.0825200080871582</real>
 				</dict>
 				<key>idleAfterInit</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7234978675842285</real>
+					<real>1.0989830493927002</real>
 				</dict>
 				<key>warmupDuringCrossfade</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7234899997711182</real>
+					<real>1.0825071334838867</real>
 				</dict>
 				<key>warmupFixedMultipliers</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7238690853118896</real>
+					<real>1.099107027053833</real>
 				</dict>
 			</dict>
 			<key>CrossfadeProgressTests</key>
@@ -823,57 +823,57 @@
 				<key>completeResetsAll</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84922885894775391</real>
+					<real>1.2237420082092285</real>
 				</dict>
 				<key>crossfadeCompleteThreshold</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84926915168762207</real>
+					<real>1.2237429618835449</real>
 				</dict>
 				<key>crossfadeTiming</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84921598434448242</real>
+					<real>1.2236709594726562</real>
 				</dict>
 				<key>progressClampedAtOne</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84920310974121094</real>
+					<real>1.2238268852233887</real>
 				</dict>
 				<key>progressMonotonicity</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84924197196960449</real>
+					<real>1.2235729694366455</real>
 				</dict>
 				<key>singleBufferComplete</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84923005104064941</real>
+					<real>1.2237057685852051</real>
 				</dict>
 				<key>totalSamplesPreserved</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84920978546142578</real>
+					<real>1.2239282131195068</real>
 				</dict>
 				<key>totalSamplesZeroDefense</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84915304183959961</real>
+					<real>1.223717212677002</real>
 				</dict>
 				<key>updateProgressDuringIdle</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84928107261657715</real>
+					<real>1.2240128517150879</real>
 				</dict>
 				<key>updateProgressDuringWarmup</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84919977188110352</real>
+					<real>1.2236959934234619</real>
 				</dict>
 				<key>warmupCompletionThreshold</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84917497634887695</real>
+					<real>1.2236831188201904</real>
 				</dict>
 			</dict>
 			<key>DCAndNyquistInvariantTests</key>
@@ -881,17 +881,17 @@
 				<key>dcSignalBoostedByLowShelf</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84776616096496582</real>
+					<real>0.76212882995605469</real>
 				</dict>
 				<key>dcSignalUnityThroughPeakingEQ</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84793901443481445</real>
+					<real>0.76213383674621582</real>
 				</dict>
 				<key>nyquistSignalUnityThroughPeakingEQ</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.82717204093933105</real>
+					<real>0.76217103004455566</real>
 				</dict>
 			</dict>
 			<key>DelayBufferCarryoverTests</key>
@@ -899,17 +899,17 @@
 				<key>delayStateBleedsSilenceAfterSignal</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84910988807678223</real>
+					<real>1.2403068542480469</real>
 				</dict>
 				<key>doubleProcessDiffersFromFirst</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84920382499694824</real>
+					<real>1.2402863502502441</real>
 				</dict>
 				<key>resetDelayBuffersEliminatesCarryover</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84910202026367188</real>
+					<real>1.2407279014587402</real>
 				</dict>
 			</dict>
 			<key>DesignTokensDimensionTests</key>
@@ -917,37 +917,37 @@
 				<key>contentWidthFormula</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7318160533905029</real>
+					<real>1.2441120147705078</real>
 				</dict>
 				<key>cornerRadiiPositive</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7318019866943359</real>
+					<real>1.2601432800292969</real>
 				</dict>
 				<key>iconSizes</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7959330081939697</real>
+					<real>1.2209808826446533</real>
 				</dict>
 				<key>minTouchTarget</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7318017482757568</real>
+					<real>1.2210121154785156</real>
 				</dict>
 				<key>popupWidth</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7317957878112793</real>
+					<real>1.2209901809692383</real>
 				</dict>
 				<key>sliderDimensionsPositive</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7631821632385254</real>
+					<real>1.260138988494873</real>
 				</dict>
 				<key>vuMeterBarCount</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7318048477172852</real>
+					<real>1.6486549377441406</real>
 				</dict>
 			</dict>
 			<key>DesignTokensDynamicResolutionTests</key>
@@ -955,92 +955,92 @@
 				<key>autoEQEmptyBorder</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.8493199348449707</real>
+					<real>1.2407150268554688</real>
 				</dict>
 				<key>autoEQEmptyIcon</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84279298782348633</real>
+					<real>1.2407369613647461</real>
 				</dict>
 				<key>autoEQToggleLabel</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84770107269287109</real>
+					<real>1.2406477928161621</real>
 				</dict>
 				<key>deviceBadgeMonoFill</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84945893287658691</real>
+					<real>1.24080491065979</real>
 				</dict>
 				<key>deviceBadgeMonoForeground</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84958791732788086</real>
+					<real>1.2406342029571533</real>
 				</dict>
 				<key>eqCardBackground</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84768986701965332</real>
+					<real>1.2406039237976074</real>
 				</dict>
 				<key>eqCardBorder</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.8493349552154541</real>
+					<real>1.2406680583953857</real>
 				</dict>
 				<key>glassFill</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84776592254638672</real>
+					<real>1.240635871887207</real>
 				</dict>
 				<key>glassFillStrong</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84781885147094727</real>
+					<real>1.240706205368042</real>
 				</dict>
 				<key>glassRowBorder</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84777498245239258</real>
+					<real>1.240623950958252</real>
 				</dict>
 				<key>glassRowBorderHover</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84778094291687012</real>
+					<real>1.2406058311462402</real>
 				</dict>
 				<key>hoverSurface</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.82713818550109863</real>
+					<real>1.2406380176544189</real>
 				</dict>
 				<key>hudBorder</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84771561622619629</real>
+					<real>1.2406857013702393</real>
 				</dict>
 				<key>menuBorder</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84438991546630859</real>
+					<real>1.2407071590423584</real>
 				</dict>
 				<key>menuBorderHover</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84778690338134766</real>
+					<real>1.2406268119812012</real>
 				</dict>
 				<key>popupOverlay</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84938597679138184</real>
+					<real>1.2406930923461914</real>
 				</dict>
 				<key>recessedBackground</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84776186943054199</real>
+					<real>1.2406461238861084</real>
 				</dict>
 				<key>sectionHeaderText</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84776997566223145</real>
+					<real>1.2406437397003174</real>
 				</dict>
 			</dict>
 			<key>DesignTokensSpacingTests</key>
@@ -1048,17 +1048,17 @@
 				<key>allPositive</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7949850559234619</real>
+					<real>0.78277087211608887</real>
 				</dict>
 				<key>reasonableRange</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7238287925720215</real>
+					<real>0.78269624710083008</real>
 				</dict>
 				<key>strictlyIncreasing</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7318429946899414</real>
+					<real>0.78272294998168945</real>
 				</dict>
 			</dict>
 			<key>DesignTokensTimingTests</key>
@@ -1066,12 +1066,12 @@
 				<key>vuMeterInterval</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7238259315490723</real>
+					<real>0.76213502883911133</real>
 				</dict>
 				<key>vuMeterPeakHold</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7238249778747559</real>
+					<real>0.76204323768615723</real>
 				</dict>
 			</dict>
 			<key>DeviceDetailSheetToggleTests</key>
@@ -1079,27 +1079,27 @@
 				<key>toggleHiddenWhenAutoIsSoftware</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7239699363708496</real>
+					<real>1.0988588333129883</real>
 				</dict>
 				<key>toggleOffClearsOverride</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7239727973937988</real>
+					<real>1.0988800525665283</real>
 				</dict>
 				<key>toggleOnFiresSoftwareOverride</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7238459587097168</real>
+					<real>1.098783016204834</real>
 				</dict>
 				<key>toggleVisibleWhenAutoIsDDC</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.723994255065918</real>
+					<real>1.0988328456878662</real>
 				</dict>
 				<key>toggleVisibleWhenAutoIsHardware</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.723844051361084</real>
+					<real>1.0988712310791016</real>
 				</dict>
 			</dict>
 			<key>DeviceIconCatalogTests</key>
@@ -1107,37 +1107,37 @@
 				<key>allSymbolsResolve</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1844289302825928</real>
+					<real>1.0987570285797119</real>
 				</dict>
 				<key>emptyQueryReturnsAll</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1844439506530762</real>
+					<real>1.1757216453552246</real>
 				</dict>
 				<key>entryLookupRoundTrips</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1844360828399658</real>
+					<real>1.0987479686737061</real>
 				</dict>
 				<key>keywordsPresent</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1825690269470215</real>
+					<real>1.0987718105316162</real>
 				</dict>
 				<key>nameDerivedSuggestion</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.184467077255249</real>
+					<real>1.0987441539764404</real>
 				</dict>
 				<key>noDuplicates</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1826057434082031</real>
+					<real>1.1492700576782227</real>
 				</dict>
 				<key>searchMatching</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1845817565917969</real>
+					<real>1.0987801551818848</real>
 				</dict>
 			</dict>
 			<key>DeviceIconOverrideTests</key>
@@ -1145,22 +1145,22 @@
 				<key>clearOverride</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84922409057617188</real>
+					<real>1.240699291229248</real>
 				</dict>
 				<key>independentPerUID</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84925627708435059</real>
+					<real>1.2405099868774414</real>
 				</dict>
 				<key>resetClearsOverrides</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84923887252807617</real>
+					<real>1.2407569885253906</real>
 				</dict>
 				<key>setAndGet</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84919524192810059</real>
+					<real>1.2406229972839355</real>
 				</dict>
 			</dict>
 			<key>DeviceIconPickerSuggestedTests</key>
@@ -1168,12 +1168,12 @@
 				<key>leadingFirstAndDeduped</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237000465393066</real>
+					<real>0.88885807991027832</real>
 				</dict>
 				<key>nilLeadingPassesThrough</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235448360443115</real>
+					<real>0.84057188034057617</real>
 				</dict>
 			</dict>
 			<key>DeviceIconPickerTests</key>
@@ -1181,17 +1181,17 @@
 				<key>automaticHighlighted</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7955207824707031</real>
+					<real>1.0663900375366211</real>
 				</dict>
 				<key>driverImageHighlightsNothing</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7953400611877441</real>
+					<real>1.0176537036895752</real>
 				</dict>
 				<key>overrideHighlighted</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7954540252685547</real>
+					<real>1.066417932510376</real>
 				</dict>
 			</dict>
 			<key>DeviceIconResolverTests</key>
@@ -1199,22 +1199,22 @@
 				<key>invalidOverrideFallsBack</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7329668998718262</real>
+					<real>1.1000549793243408</real>
 				</dict>
 				<key>invalidOverrideNoAutomatic</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7329583168029785</real>
+					<real>1.1001060009002686</real>
 				</dict>
 				<key>nilOverrideFallsBack</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7332432270050049</real>
+					<real>1.0998640060424805</real>
 				</dict>
 				<key>overrideWins</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7332556247711182</real>
+					<real>1.1000270843505859</real>
 				</dict>
 			</dict>
 			<key>DeviceInspectorFormatterTests</key>
@@ -1222,62 +1222,62 @@
 				<key>fractionalSampleRate</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.93262219429016113</real>
+					<real>0.76704096794128418</real>
 				</dict>
 				<key>hogSelfOwned</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.93258786201477051</real>
+					<real>0.76698207855224609</real>
 				</dict>
 				<key>hogUnowned</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94922113418579102</real>
+					<real>0.76713395118713379</real>
 				</dict>
 				<key>hogWithEmptyName</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94818615913391113</real>
+					<real>0.76696896553039551</real>
 				</dict>
 				<key>hogWithName</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.93257880210876465</real>
+					<real>0.76627087593078613</real>
 				</dict>
 				<key>hogWithoutName</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94917702674865723</real>
+					<real>0.76695871353149414</real>
 				</dict>
 				<key>integerSampleRate</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94106388092041016</real>
+					<real>0.76708197593688965</real>
 				</dict>
 				<key>lpcmFormat</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.9492337703704834</real>
+					<real>0.76694440841674805</real>
 				</dict>
 				<key>nilAsbd</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.9491279125213623</real>
+					<real>0.76708388328552246</real>
 				</dict>
 				<key>nonLPCMFormat</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94826316833496094</real>
+					<real>0.76706600189208984</real>
 				</dict>
 				<key>zeroBitsPerChannel</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94816684722900391</real>
+					<real>0.76699018478393555</real>
 				</dict>
 				<key>zeroSampleRate</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94908785820007324</real>
+					<real>0.76705694198608398</real>
 				</dict>
 			</dict>
 			<key>DeviceVolumeOverrideMuteSyncTests</key>
@@ -1285,12 +1285,12 @@
 				<key>overrideRevertClears</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1825811862945557</real>
+					<real>1.2213771343231201</real>
 				</dict>
 				<key>overrideToSoftwareInstalls</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1823101043701172</real>
+					<real>1.2210121154785156</real>
 				</dict>
 			</dict>
 			<key>DeviceVolumeOverrideTests</key>
@@ -1298,22 +1298,22 @@
 				<key>clearOverride</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7955489158630371</real>
+					<real>0.7811121940612793</real>
 				</dict>
 				<key>independentPerUID</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7949361801147461</real>
+					<real>0.78278207778930664</real>
 				</dict>
 				<key>resetClearsOverrides</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7954719066619873</real>
+					<real>0.78099989891052246</real>
 				</dict>
 				<key>setAndGet</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.79544997215271</real>
+					<real>0.78099489212036133</real>
 				</dict>
 			</dict>
 			<key>DeviceVolumeStoredVolumeTests</key>
@@ -1321,17 +1321,17 @@
 				<key>hardwareDdcFloorBelowOnePercent</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1464040279388428</real>
+					<real>1.2402808666229248</real>
 				</dict>
 				<key>hardwareDdcKeepAboveFloor</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94097590446472168</real>
+					<real>1.2403018474578857</real>
 				</dict>
 				<key>softwareNeverFloored</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1142048835754395</real>
+					<real>1.2403602600097656</real>
 				</dict>
 			</dict>
 			<key>EQPresetBandGainTests</key>
@@ -1339,22 +1339,22 @@
 				<key>allGainsFinite</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84942793846130371</real>
+					<real>1.1416559219360352</real>
 				</dict>
 				<key>allGainsWithinRange</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84943795204162598</real>
+					<real>1.1416699886322021</real>
 				</dict>
 				<key>allPresetsHave10Bands</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84933280944824219</real>
+					<real>1.141279935836792</real>
 				</dict>
 				<key>flatPresetAllZeros</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.8493340015411377</real>
+					<real>1.143862247467041</real>
 				</dict>
 			</dict>
 			<key>EQPresetCatalogTests</key>
@@ -1362,32 +1362,32 @@
 				<key>allCasesCount</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7955019474029541</real>
+					<real>1.1439011096954346</real>
 				</dict>
 				<key>allCategoriesCovered</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7954952716827393</real>
+					<real>1.1439769268035889</real>
 				</dict>
 				<key>allPresetsHaveCategories</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7954511642456055</real>
+					<real>1.143923282623291</real>
 				</dict>
 				<key>allPresetsHaveNames</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.794964075088501</real>
+					<real>1.1439170837402344</real>
 				</dict>
 				<key>categoryPartitionIsComplete</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7954330444335938</real>
+					<real>1.1438958644866943</real>
 				</dict>
 				<key>presetsForCategoryAreCorrect</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.794971227645874</real>
+					<real>1.1439189910888672</real>
 				</dict>
 			</dict>
 			<key>EQProcessorMultiBandSignalTests</key>
@@ -1395,17 +1395,17 @@
 				<key>multipleBandsBoost</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84902000427246094</real>
+					<real>1.2406656742095947</real>
 				</dict>
 				<key>sampleRateChange</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.045129060745239258</real>
+					<real>0.080153703689575195</real>
 				</dict>
 				<key>singleBandViaEQProcessor</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84903073310852051</real>
+					<real>1.2406959533691406</real>
 				</dict>
 			</dict>
 			<key>EQSettingsCodableTests</key>
@@ -1413,22 +1413,22 @@
 				<key>missingBandGains</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.93260717391967773</real>
+					<real>1.2238690853118896</real>
 				</dict>
 				<key>missingIsEnabled</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.93262100219726562</real>
+					<real>1.2237982749938965</real>
 				</dict>
 				<key>roundTrip</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.9326179027557373</real>
+					<real>1.2238438129425049</real>
 				</dict>
 				<key>shortBandGainsPads</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.93262386322021484</real>
+					<real>1.2240018844604492</real>
 				</dict>
 			</dict>
 			<key>EQSettingsEdgeCaseTests</key>
@@ -1436,22 +1436,22 @@
 				<key>aboveNyquistBandsStableAt8kHz</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1842930316925049</real>
+					<real>0.76204228401184082</real>
 				</dict>
 				<key>allBandsMaxGainNoOverflow</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1844098567962646</real>
+					<real>0.76212406158447266</real>
 				</dict>
 				<key>allBandsMinGainAttenuates</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1843349933624268</real>
+					<real>0.76209282875061035</real>
 				</dict>
 				<key>disabledEQSettingsPassthrough</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1843230724334717</real>
+					<real>0.76659393310546875</real>
 				</dict>
 			</dict>
 			<key>EQSettingsFrequencyTests</key>
@@ -1459,22 +1459,22 @@
 				<key>frequenciesInAudibleRange</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7951228618621826</real>
+					<real>1.240123987197876</real>
 				</dict>
 				<key>frequenciesMatchISO</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7631430625915527</real>
+					<real>1.2401587963104248</real>
 				</dict>
 				<key>frequenciesMonotonic</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7778761386871338</real>
+					<real>1.2402970790863037</real>
 				</dict>
 				<key>frequencyCount</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7949898242950439</real>
+					<real>1.2401220798492432</real>
 				</dict>
 			</dict>
 			<key>EQSettingsNormalizationTests</key>
@@ -1482,47 +1482,47 @@
 				<key>clampedGains</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7241811752319336</real>
+					<real>1.0177018642425537</real>
 				</dict>
 				<key>clampedGainsInfinity</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7239880561828613</real>
+					<real>0.98546695709228516</real>
 				</dict>
 				<key>clampedGainsNaN</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7238340377807617</real>
+					<real>0.90503096580505371</real>
 				</dict>
 				<key>emptyArrayPads</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7319447994232178</real>
+					<real>0.93756413459777832</real>
 				</dict>
 				<key>exactBandCount</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7240009307861328</real>
+					<real>0.95325398445129395</real>
 				</dict>
 				<key>flatEqualsDefault</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7243218421936035</real>
+					<real>1.0826458930969238</real>
 				</dict>
 				<key>isEnabledDefault</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7242207527160645</real>
+					<real>0.95327520370483398</real>
 				</dict>
 				<key>padShortBands</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7240400314331055</real>
+					<real>1.082629919052124</real>
 				</dict>
 				<key>truncateLongBands</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7239878177642822</real>
+					<real>0.96934986114501953</real>
 				</dict>
 			</dict>
 			<key>EnableDisableCyclingTests</key>
@@ -1530,12 +1530,12 @@
 				<key>disableIsBitExactPassthrough</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84924411773681641</real>
+					<real>1.6937379837036133</real>
 				</dict>
 				<key>enableDisableCycleDelayStateCarryover</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.8492591381072998</real>
+					<real>1.6961081027984619</real>
 				</dict>
 			</dict>
 			<key>EstimatedPhonBoundaryTests</key>
@@ -1543,27 +1543,27 @@
 				<key>fullVolumeMapsToReferencePhon</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7992551326751709</real>
+					<real>1.1410350799560547</real>
 				</dict>
 				<key>negativeVolumeClampsToLowerBound</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7992651462554932</real>
+					<real>1.1597518920898438</real>
 				</dict>
 				<key>quarterVolumeMidpoint</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7992560863494873</real>
+					<real>1.1408712863922119</real>
 				</dict>
 				<key>volumeAboveOneClampsToReferencePhon</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7992537021636963</real>
+					<real>1.1407570838928223</real>
 				</dict>
 				<key>zeroVolumeMapsToLowerBound</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.799260139465332</real>
+					<real>1.1597530841827393</real>
 				</dict>
 			</dict>
 			<key>ExtremeAmplitudeTests</key>
@@ -1571,22 +1571,22 @@
 				<key>highAmplitudeDoesNotNaN</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.91586709022521973</real>
+					<real>1.2401218414306641</real>
 				</dict>
 				<key>infinityInputBypassesSafetyNet</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84897875785827637</real>
+					<real>1.240185022354126</real>
 				</dict>
 				<key>subnormalInputSurvivesEQ</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84892582893371582</real>
+					<real>1.2238881587982178</real>
 				</dict>
 				<key>zeroAmplitudeInput</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84896993637084961</real>
+					<real>1.2401528358459473</real>
 				</dict>
 			</dict>
 			<key>FullChainEdgeCaseTests</key>
@@ -1594,17 +1594,17 @@
 				<key>dualEQChainCumulativeEffect</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84922480583190918</real>
+					<real>1.6481609344482422</real>
 				</dict>
 				<key>softLimiterZeroLength</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84949517250061035</real>
+					<real>1.6228680610656738</real>
 				</dict>
 				<key>zeroVolumeChain</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84926700592041016</real>
+					<real>1.6692180633544922</real>
 				</dict>
 			</dict>
 			<key>FullSignalChainTests</key>
@@ -1612,17 +1612,17 @@
 				<key>limiterConstrainsHighBoost</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237057685852051</real>
+					<real>1.0824790000915527</real>
 				</dict>
 				<key>lowVolumeTransparent</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237091064453125</real>
+					<real>1.0825271606445312</real>
 				</dict>
 				<key>volumeEQLimiterChain</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237188816070557</real>
+					<real>1.0824959278106689</real>
 				</dict>
 			</dict>
 			<key>HUDDeviceNameSmokeTests</key>
@@ -1630,22 +1630,22 @@
 				<key>emptyNameSmoke</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7236108779907227</real>
+					<real>1.2403180599212646</real>
 				</dict>
 				<key>longNamePreviewConstruction</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7236781120300293</real>
+					<real>1.2402870655059814</real>
 				</dict>
 				<key>longNameSmoke</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7241780757904053</real>
+					<real>1.2405338287353516</real>
 				</dict>
 				<key>shortNameSmoke</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7234649658203125</real>
+					<real>1.2403068542480469</real>
 				</dict>
 			</dict>
 			<key>HUDStyleCodableTests</key>
@@ -1653,52 +1653,52 @@
 				<key>allCasesCount</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7318708896636963</real>
+					<real>1.2082462310791016</real>
 				</dict>
 				<key>appSettingsHUDStyleDefault</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7317960262298584</real>
+					<real>1.2407407760620117</real>
 				</dict>
 				<key>appSettingsHUDStyleRoundTrip</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.091844797134399414</real>
+					<real>0.080164194107055664</real>
 				</dict>
 				<key>appSettingsMediaKeyControlDefault</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7319529056549072</real>
+					<real>1.2407119274139404</real>
 				</dict>
 				<key>classicRawEncoding</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.731856107711792</real>
+					<real>1.2082409858703613</real>
 				</dict>
 				<key>idMatchesRawValue</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7318367958068848</real>
+					<real>1.2407917976379395</real>
 				</dict>
 				<key>missingHUDStyleProducesDefault</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.091838836669921875</real>
+					<real>0.078103065490722656</real>
 				</dict>
 				<key>roundTripAllCases</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7318568229675293</real>
+					<real>1.2408339977264404</real>
 				</dict>
 				<key>settingsManagerHUDStyleRoundTrip</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.091845989227294922</real>
+					<real>0.078184127807617188</real>
 				</dict>
 				<key>tahoeRawEncoding</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7318539619445801</real>
+					<real>1.2082550525665283</real>
 				</dict>
 			</dict>
 			<key>HUDThresholdTests</key>
@@ -1706,37 +1706,37 @@
 				<key>classicLow</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.72371506690979</real>
+					<real>1.2210872173309326</real>
 				</dict>
 				<key>classicZeroPercent</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7239170074462891</real>
+					<real>1.2236039638519287</real>
 				</dict>
 				<key>tahoeHigh</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237060070037842</real>
+					<real>1.2211110591888428</real>
 				</dict>
 				<key>tahoeLow</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237789630889893</real>
+					<real>1.2214260101318359</real>
 				</dict>
 				<key>tahoeMax</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237191200256348</real>
+					<real>1.2213709354400635</real>
 				</dict>
 				<key>tahoeMid</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237348556518555</real>
+					<real>1.2235777378082275</real>
 				</dict>
 				<key>tahoeZeroPercent</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237248420715332</real>
+					<real>1.2214341163635254</real>
 				</dict>
 			</dict>
 			<key>HUDWindowControllerPositionTests</key>
@@ -1744,32 +1744,32 @@
 				<key>classicCenterBottom</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7955129146575928</real>
+					<real>0.76205873489379883</real>
 				</dict>
 				<key>classicSuppressionDegradedUnchanged</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7954518795013428</real>
+					<real>0.76515102386474609</real>
 				</dict>
 				<key>tahoeSuppressionDegraded</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7954378128051758</real>
+					<real>0.76540207862854004</real>
 				</dict>
 				<key>tahoeSuppressionDegradedFormulaHolds</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7954440116882324</real>
+					<real>0.76520013809204102</real>
 				</dict>
 				<key>tahoeTopRight</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7954859733581543</real>
+					<real>0.76210927963256836</real>
 				</dict>
 				<key>tahoeZeroSize</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7954249382019043</real>
+					<real>0.76198792457580566</real>
 				</dict>
 			</dict>
 			<key>HUDWindowControllerTimerTests</key>
@@ -1777,37 +1777,37 @@
 				<key>hideDelayIs1100msForBothStyles</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1462078094482422</real>
+					<real>1.2403109073638916</real>
 				</dict>
 				<key>hideDelayOverrideApplies</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.96121811866760254</real>
+					<real>1.2404420375823975</real>
 				</dict>
 				<key>popupGuardSuppressesShow</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.0293900966644287</real>
+					<real>1.2402808666229248</real>
 				</dict>
 				<key>popupHiddenShowUpdatesPanel</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94066810607910156</real>
+					<real>1.2402920722961426</real>
 				</dict>
 				<key>showCallCountIncrements</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.96305584907531738</real>
+					<real>1.2405917644500732</real>
 				</dict>
 				<key>showCallCountTracksAttempts</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94076681137084961</real>
+					<real>1.2402958869934082</real>
 				</dict>
 				<key>twoRapidShowsIncrementTwice</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.96122312545776367</real>
+					<real>1.2402889728546143</real>
 				</dict>
 			</dict>
 			<key>IOKitMediaKeyDecoderTests</key>
@@ -1815,62 +1815,62 @@
 				<key>differentEventsNotEqual</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237367630004883</real>
+					<real>1.0988187789916992</real>
 				</dict>
 				<key>muteDown</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237288951873779</real>
+					<real>1.0990197658538818</real>
 				</dict>
 				<key>muteKeyUp</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7238953113555908</real>
+					<real>1.0989079475402832</real>
 				</dict>
 				<key>muteRepeat</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237279415130615</real>
+					<real>1.0824730396270752</real>
 				</dict>
 				<key>soundDownDown</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237131595611572</real>
+					<real>1.0988650321960449</real>
 				</dict>
 				<key>soundDownKeyUp</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.723736047744751</real>
+					<real>1.082484245300293</real>
 				</dict>
 				<key>soundDownRepeat</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237720489501953</real>
+					<real>1.0989649295806885</real>
 				</dict>
 				<key>soundUpDown</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.723844051361084</real>
+					<real>1.098952054977417</real>
 				</dict>
 				<key>soundUpKeyUp</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.72371506690979</real>
+					<real>1.0988101959228516</real>
 				</dict>
 				<key>soundUpRepeat</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7238280773162842</real>
+					<real>1.0989620685577393</real>
 				</dict>
 				<key>unknownKeyTypeFailOpen</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7238428592681885</real>
+					<real>1.0824720859527588</real>
 				</dict>
 				<key>volumeUpEquatable</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.723740816116333</real>
+					<real>1.0990500450134277</real>
 				</dict>
 			</dict>
 			<key>ISO226ContoursMigrationTests</key>
@@ -1878,7 +1878,7 @@
 				<key>legacyDeltaSnapshots</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.72409987449646</real>
+					<real>1.2236628532409668</real>
 				</dict>
 			</dict>
 			<key>ISO226ContoursReferenceTests</key>
@@ -1886,42 +1886,42 @@
 				<key>compensationAmountScalesTargetCurve</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7236509323120117</real>
+					<real>1.208287239074707</real>
 				</dict>
 				<key>contourReferenceValues20Phon</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7239429950714111</real>
+					<real>1.1597518920898438</real>
 				</dict>
 				<key>contourReferenceValues40Phon</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7247538566589355</real>
+					<real>1.1411700248718262</real>
 				</dict>
 				<key>fullVolumeMapsToReferencePhon</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.723717212677002</real>
+					<real>1.2082459926605225</real>
 				</dict>
 				<key>lowFrequencyTwentyHertzEdgeCase</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7241799831390381</real>
+					<real>1.1597530841827393</real>
 				</dict>
 				<key>normalizedCompensationAtMidVolume</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7236473560333252</real>
+					<real>1.140894889831543</real>
 				</dict>
 				<key>referencePhonIsFlat</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7239649295806885</real>
+					<real>1.1412777900695801</real>
 				</dict>
 				<key>table1CriticalCoefficients</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7242050170898438</real>
+					<real>1.2082729339599609</real>
 				</dict>
 			</dict>
 			<key>InfoGridLayoutTests</key>
@@ -1929,52 +1929,52 @@
 				<key>deviceIDAlwaysLast</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7951030731201172</real>
+					<real>1.0826418399810791</real>
 				</dict>
 				<key>formatHiddenWhenNil</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.763200044631958</real>
+					<real>1.0992429256439209</real>
 				</dict>
 				<key>formatRowPosition</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7952501773834229</real>
+					<real>1.0827200412750244</real>
 				</dict>
 				<key>pickerWhenSettable</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7779040336608887</real>
+					<real>1.0826888084411621</real>
 				</dict>
 				<key>plainTextWhenNotSettable</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7318010330200195</real>
+					<real>1.0825133323669434</real>
 				</dict>
 				<key>plainTextWhenSingleRate</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7631862163543701</real>
+					<real>1.0826022624969482</real>
 				</dict>
 				<key>rowOrder</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7631161212921143</real>
+					<real>1.0826709270477295</real>
 				</dict>
 				<key>sampleRateAlwaysPresent</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7952642440795898</real>
+					<real>1.0825743675231934</real>
 				</dict>
 				<key>threeRowsWithoutFormat</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7631282806396484</real>
+					<real>1.0826220512390137</real>
 				</dict>
 				<key>transportAlwaysFirst</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7318189144134521</real>
+					<real>1.0827043056488037</real>
 				</dict>
 			</dict>
 			<key>InputStreamUsageTests</key>
@@ -1982,32 +1982,32 @@
 				<key>duplexDisablesMicKeepsTap</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7243092060089111</real>
+					<real>0.79127621650695801</real>
 				</dict>
 				<key>keepsTrailingByOutputCount</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7238857746124268</real>
+					<real>0.79129600524902344</real>
 				</dict>
 				<key>multipleHardwareInputsDisabled</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7238540649414062</real>
+					<real>0.80814599990844727</real>
 				</dict>
 				<key>noInputs</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7246150970458984</real>
+					<real>0.90505290031433105</real>
 				</dict>
 				<key>outputOnlyNoChange</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7239508628845215</real>
+					<real>0.79103684425354004</real>
 				</dict>
 				<key>zeroOutputCountNeverDisablesTap</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7240989208221436</real>
+					<real>0.78268814086914062</real>
 				</dict>
 			</dict>
 			<key>LoudnessCompensatorEnableStateTests</key>
@@ -2015,7 +2015,7 @@
 				<key>sameVolumeReEnableRestoresProcessing</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235877513885498</real>
+					<real>0.76519203186035156</real>
 				</dict>
 			</dict>
 			<key>LoudnessCompensatorHeadroomTests</key>
@@ -2023,7 +2023,7 @@
 				<key>fittedCascadeTracksTargetAtThreePercentVolume</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235589027404785</real>
+					<real>1.2238547801971436</real>
 				</dict>
 			</dict>
 			<key>LoudnessEqualizerTests</key>
@@ -2031,72 +2031,72 @@
 				<key>dbLinearRoundTrip</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.89911222457885742</real>
+					<real>0.76137924194335938</real>
 				</dict>
 				<key>detectorAttackFasterThanRelease</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.93260478973388672</real>
+					<real>0.76227569580078125</real>
 				</dict>
 				<key>disabledEqualizerPassesThroughUnchanged</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94939398765563965</real>
+					<real>0.76148200035095215</real>
 				</dict>
 				<key>disablingAfterProcessingClearsResidualGain</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.91582202911376953</real>
+					<real>0.76149797439575195</real>
 				</dict>
 				<key>gainComputerClamps</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.93258118629455566</real>
+					<real>0.76149582862854004</real>
 				</dict>
 				<key>gainComputerNoiseFloorProtection</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84891009330749512</real>
+					<real>0.76149415969848633</real>
 				</dict>
 				<key>gainSmootherAsymmetry</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94909405708312988</real>
+					<real>0.76149201393127441</real>
 				</dict>
 				<key>ingestConvergesToExpectedLevel</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.93273687362670898</real>
+					<real>0.76223587989807129</real>
 				</dict>
 				<key>ingestReturnsAtHopBoundaries</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84890890121459961</real>
+					<real>0.76228809356689453</real>
 				</dict>
 				<key>kWeightingMonotonicHFBoost</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.93261194229125977</real>
+					<real>0.76150417327880859</real>
 				</dict>
 				<key>kWeightingResetDeterminism</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.9326169490814209</real>
+					<real>0.76153683662414551</real>
 				</dict>
 				<key>loudnessEqualizerPreservesStereoImage</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.86619782447814941</real>
+					<real>0.76243376731872559</real>
 				</dict>
 				<key>settingsDefaults</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.89911723136901855</real>
+					<real>0.76151418685913086</real>
 				</dict>
 				<key>smoothingCoefficientOrder</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84888505935668945</real>
+					<real>0.76149630546569824</real>
 				</dict>
 			</dict>
 			<key>LoudnessIntegrationTests</key>
@@ -2104,17 +2104,17 @@
 				<key>loudnessChainOrdering</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.6766681671142578</real>
+					<real>0.7668302059173584</real>
 				</dict>
 				<key>loudnessCompensatorModifiesOutput</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.6939601898193359</real>
+					<real>0.76696205139160156</real>
 				</dict>
 				<key>loudnessEqualizerModifiesOutput</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.6766142845153809</real>
+					<real>0.76686406135559082</real>
 				</dict>
 			</dict>
 			<key>MediaKeyDecoderFailOpenTests</key>
@@ -2122,57 +2122,57 @@
 				<key>allOnesFailOpen</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235782146453857</real>
+					<real>0.79103326797485352</real>
 				</dict>
 				<key>allZeroesFailOpen</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235109806060791</real>
+					<real>0.78270077705383301</real>
 				</dict>
 				<key>brightnessDownFailOpen</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235107421875</real>
+					<real>0.79126167297363281</real>
 				</dict>
 				<key>brightnessUpFailOpen</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7236409187316895</real>
+					<real>0.78272867202758789</real>
 				</dict>
 				<key>ejectFailOpen</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235519886016846</real>
+					<real>0.78272891044616699</real>
 				</dict>
 				<key>fabricatedUnknownFailOpen</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235846519470215</real>
+					<real>0.78268218040466309</real>
 				</dict>
 				<key>muteKeyUpNil</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7234869003295898</real>
+					<real>0.80813503265380859</real>
 				</dict>
 				<key>muteRepeatNil</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235050201416016</real>
+					<real>0.78274106979370117</real>
 				</dict>
 				<key>sendableConformance</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235140800476074</real>
+					<real>0.78266572952270508</real>
 				</dict>
 				<key>soundDownKeyUpNil</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7234880924224854</real>
+					<real>0.78271889686584473</real>
 				</dict>
 				<key>soundUpKeyUpNil</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235076427459717</real>
+					<real>0.78268980979919434</real>
 				</dict>
 			</dict>
 			<key>MediaKeyMonitorHandlerTests</key>
@@ -2180,142 +2180,142 @@
 				<key>ddcNonRepeatAlwaysWrites</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1996498107910156</real>
+					<real>1.430027961730957</real>
 				</dict>
 				<key>ddcRepeatsCoalesced</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.4893567562103271</real>
+					<real>1.6948783397674561</real>
 				</dict>
 				<key>feedbackCoalescedWithDDC</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.4370260238647461</real>
+					<real>1.5096340179443359</real>
 				</dict>
 				<key>feedbackGainTracksSoftwareTier</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.6765792369842529</real>
+					<real>1.606544017791748</real>
 				</dict>
 				<key>feedbackOnVolumeDown</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.4196658134460449</real>
+					<real>1.2601478099822998</real>
 				</dict>
 				<key>feedbackOnVolumeDownToZero</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.2164020538330078</real>
+					<real>1.2441236972808838</real>
 				</dict>
 				<key>feedbackOnVolumeUpHardware</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.3833072185516357</real>
+					<real>1.5575299263000488</real>
 				</dict>
 				<key>fourRepeatsCumulative</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.3675799369812012</real>
+					<real>1.3983030319213867</real>
 				</dict>
 				<key>hardwareRepeatsNotCoalesced</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.5589890480041504</real>
+					<real>1.4936671257019043</real>
 				</dict>
 				<key>hudNotShownWhenPopupVisible</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.5065779685974121</real>
+					<real>1.2696561813354492</real>
 				</dict>
 				<key>hudShowCalledWhenPopupHidden</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.2852721214294434</real>
+					<real>1.4459002017974854</real>
 				</dict>
 				<key>hudShownForRepeat</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.4027101993560791</real>
+					<real>1.4142370223999023</real>
 				</dict>
 				<key>muteToggleOff</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.301537036895752</real>
+					<real>1.6481177806854248</real>
 				</dict>
 				<key>muteToggleOn</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.2333879470825195</real>
+					<real>1.5256719589233398</real>
 				</dict>
 				<key>noFeedbackOnMuteToggle</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.3493599891662598</real>
+					<real>1.381953239440918</real>
 				</dict>
 				<key>repeatsClampAtOne</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.6574552059173584</real>
+					<real>1.3019540309906006</real>
 				</dict>
 				<key>softwareVsHardwareStepDivergence</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.6341052055358887</real>
+					<real>1.5733268260955811</real>
 				</dict>
 				<key>volumeDownAtZeroWhileMutedNoOp</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.2513139247894287</real>
+					<real>1.6227960586547852</real>
 				</dict>
 				<key>volumeDownClamp</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.3174419403076172</real>
+					<real>1.3340218067169189</real>
 				</dict>
 				<key>volumeDownRepeatStepsVolume</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.6936452388763428</real>
+					<real>1.4617891311645508</real>
 				</dict>
 				<key>volumeDownStep</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.3334650993347168</real>
+					<real>1.2857880592346191</real>
 				</dict>
 				<key>volumeDownToAudibleWhileMutedUnmutes</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.6121602058410645</real>
+					<real>1.3178908824920654</real>
 				</dict>
 				<key>volumeDownToZeroAutoMutes</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.2684528827667236</real>
+					<real>1.3658430576324463</real>
 				</dict>
 				<key>volumeUpClamp</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.5766608715057373</real>
+					<real>1.5415749549865723</real>
 				</dict>
 				<key>volumeUpRepeatStepsVolume</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.59352707862854</real>
+					<real>1.5893032550811768</real>
 				</dict>
 				<key>volumeUpStep</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.4541130065917969</real>
+					<real>1.4776790142059326</real>
 				</dict>
 				<key>volumeUpWhileMutedUnmutes</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.5241920948028564</real>
+					<real>1.6695458889007568</real>
 				</dict>
 				<key>volumeUpWhileUnmutedDoesNotCallSetMute</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.541640043258667</real>
+					<real>1.3500258922576904</real>
 				</dict>
 			</dict>
 			<key>MediaKeyMonitorLifecycleTests</key>
@@ -2323,32 +2323,32 @@
 				<key>startDisabledDoesNotGoOffline</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94932985305786133</real>
+					<real>1.2082221508026123</real>
 				</dict>
 				<key>startIdempotent</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.88237905502319336</real>
+					<real>1.1921441555023193</real>
 				</dict>
 				<key>stopCallsRunLoopSourceRemovedHook</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.93273711204528809</real>
+					<real>1.2407851219177246</real>
 				</dict>
 				<key>stopCancelsWatchdog</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.91580986976623535</real>
+					<real>1.1603281497955322</real>
 				</dict>
 				<key>stopIdempotent</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.86624884605407715</real>
+					<real>1.2242939472198486</real>
 				</dict>
 				<key>tenRepeatsTenShowCalls</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.89911317825317383</real>
+					<real>1.1762268543243408</real>
 				</dict>
 			</dict>
 			<key>MediaKeyTapDisabledTests</key>
@@ -2356,32 +2356,32 @@
 				<key>doubleDisableWithinWindowGoesOffline</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.016917228698730469</real>
+					<real>0.059956789016723633</real>
 				</dict>
 				<key>initialStateOfflineFalse</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7109880447387695</real>
+					<real>1.1757440567016602</real>
 				</dict>
 				<key>revocationBranchWhenNotTrusted</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.016938686370849609</real>
+					<real>0.059949874877929688</real>
 				</dict>
 				<key>revocationIsIdempotent</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.016962051391601562</real>
+					<real>0.11385679244995117</real>
 				</dict>
 				<key>singleDisableDoesNotGoOffline</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.016961097717285156</real>
+					<real>0.059918880462646484</real>
 				</dict>
 				<key>watchdogResetAfterDoubleDisable</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.01690983772277832</real>
+					<real>0.059954166412353516</real>
 				</dict>
 			</dict>
 			<key>MenuBarDeviceIconResolverTests</key>
@@ -2389,77 +2389,77 @@
 				<key>airPodsPriority</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84912204742431641</real>
+					<real>1.2238311767578125</real>
 				</dict>
 				<key>defaultIDInvalidReturnsFallback</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84910392761230469</real>
+					<real>1.2238328456878662</real>
 				</dict>
 				<key>defaultIDOverrideValidated</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.8490908145904541</real>
+					<real>1.2236697673797607</real>
 				</dict>
 				<key>defaultIDOverrideWins</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84910202026367188</real>
+					<real>1.2237858772277832</real>
 				</dict>
 				<key>defaultIDUnreadableUIDFallsThrough</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84906721115112305</real>
+					<real>1.2239298820495605</real>
 				</dict>
 				<key>defaultOutputTakesPrecedence</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84911012649536133</real>
+					<real>1.2237167358398438</real>
 				</dict>
 				<key>defaultValidatorChecksRealSymbols</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.8492119312286377</real>
+					<real>1.2236700057983398</real>
 				</dict>
 				<key>displayPriority</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84916305541992188</real>
+					<real>1.2238330841064453</real>
 				</dict>
 				<key>homePodPriority</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.8491208553314209</real>
+					<real>1.2237849235534668</real>
 				</dict>
 				<key>noOutputDevicesFallbacks</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84914803504943848</real>
+					<real>1.2212898731231689</real>
 				</dict>
 				<key>priorityPathConsultsOverride</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84912800788879395</real>
+					<real>1.2238099575042725</real>
 				</dict>
 				<key>resolvableOverrideWins</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84911227226257324</real>
+					<real>1.2238490581512451</real>
 				</dict>
 				<key>unavailableDefaultFallsBackToPriority</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84904170036315918</real>
+					<real>1.2237949371337891</real>
 				</dict>
 				<key>unavailablePriorityFallsBack</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.8491661548614502</real>
+					<real>1.2238311767578125</real>
 				</dict>
 				<key>unresolvableOverrideFallsBack</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.8490750789642334</real>
+					<real>1.2239229679107666</real>
 				</dict>
 			</dict>
 			<key>MenuBarIconImageSizeTests</key>
@@ -2467,17 +2467,17 @@
 				<key>allIconsShareOneSize</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1841130256652832</real>
+					<real>1.6960630416870117</real>
 				</dict>
 				<key>sharedSizeCoversNaturalSymbolSize</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.3493762016296387</real>
+					<real>1.6960949897766113</real>
 				</dict>
 				<key>templateAndAccessibilitySurvive</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.3516101837158203</real>
+					<real>1.6960899829864502</real>
 				</dict>
 			</dict>
 			<key>MenuBarIconStateImageTests</key>
@@ -2485,27 +2485,27 @@
 				<key>deviceFlashImage</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7956459522247314</real>
+					<real>1.1757848262786865</real>
 				</dict>
 				<key>deviceImage</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7949779033660889</real>
+					<real>1.1492540836334229</real>
 				</dict>
 				<key>speakerMutedImage</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7949891090393066</real>
+					<real>1.1492841243743896</real>
 				</dict>
 				<key>speakerVolumeImage</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7956838607788086</real>
+					<real>1.1492569446563721</real>
 				</dict>
 				<key>staticBaselineImage</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7949950695037842</real>
+					<real>1.1492500305175781</real>
 				</dict>
 			</dict>
 			<key>MenuBarIconStyleTests</key>
@@ -2513,22 +2513,22 @@
 				<key>allCasesCount</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1506130695343018</real>
+					<real>1.2211060523986816</real>
 				</dict>
 				<key>allHaveIconNames</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1464090347290039</real>
+					<real>1.2213308811187744</real>
 				</dict>
 				<key>codableRoundTrip</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.0293798446655273</real>
+					<real>1.2214639186859131</real>
 				</dict>
 				<key>defaultNotSystemSymbol</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.0293803215026855</real>
+					<real>1.2212760448455811</real>
 				</dict>
 			</dict>
 			<key>MenuBarPopupControllerTests</key>
@@ -2536,27 +2536,27 @@
 				<key>findIgnoresNonMatching</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.0038502216339111328</real>
+					<real>0.0048646926879882812</real>
 				</dict>
 				<key>findLocatesMatching</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.32476687431335449</real>
+					<real>0.1956019401550293</real>
 				</dict>
 				<key>findReturnsNilWhenNoMatch</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.9603121280670166</real>
+					<real>1.6530499458312988</real>
 				</dict>
 				<key>noMatchingItem</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235748767852783</real>
+					<real>1.1642642021179199</real>
 				</dict>
 				<key>toggleEndToEndSmoke</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.0038547515869140625</real>
+					<real>0.0032329559326171875</real>
 				</dict>
 			</dict>
 			<key>MenuBarPopupSizeCodableTests</key>
@@ -2564,32 +2564,32 @@
 				<key>comfortableRawEncoding</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1824450492858887</real>
+					<real>1.2236440181732178</real>
 				</dict>
 				<key>compactRawEncoding</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1664187908172607</real>
+					<real>1.2235989570617676</real>
 				</dict>
 				<key>defaultMissingKey</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1822400093078613</real>
+					<real>1.2235901355743408</real>
 				</dict>
 				<key>roundTripAllCases</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1824159622192383</real>
+					<real>1.2236380577087402</real>
 				</dict>
 				<key>roundTripThroughAppSettings</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1822290420532227</real>
+					<real>1.2236549854278564</real>
 				</dict>
 				<key>spaciousRawEncoding</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1823029518127441</real>
+					<real>1.2235860824584961</real>
 				</dict>
 			</dict>
 			<key>MenuBarPopupSizeDimensionsTests</key>
@@ -2597,32 +2597,32 @@
 				<key>comfortableDimensions</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94907593727111816</real>
+					<real>1.1438539028167725</real>
 				</dict>
 				<key>compactDimensions</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94108486175537109</real>
+					<real>1.1416623592376709</real>
 				</dict>
 				<key>maxContentHeightFitsSmallestScreen</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94110798835754395</real>
+					<real>1.1438107490539551</real>
 				</dict>
 				<key>maxContentHeightMonotonic</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94105386734008789</real>
+					<real>1.1438579559326172</real>
 				</dict>
 				<key>spaciousDimensions</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94815897941589355</real>
+					<real>1.1413421630859375</real>
 				</dict>
 				<key>widthsMonotonic</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.9410550594329834</real>
+					<real>1.1441569328308105</real>
 				</dict>
 			</dict>
 			<key>MergePriorityOrderTests</key>
@@ -2630,47 +2630,47 @@
 				<key>allDisconnected</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.4371180534362793</real>
+					<real>0.78278803825378418</real>
 				</dict>
 				<key>bothEmpty</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.6573090553283691</real>
+					<real>0.78270697593688965</real>
 				</dict>
 				<key>disconnectedAtEnd</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.5588350296020508</real>
+					<real>0.78278589248657227</real>
 				</dict>
 				<key>disconnectedAtStart</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.5766782760620117</real>
+					<real>0.78268218040466309</real>
 				</dict>
 				<key>disconnectedBetween</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.5588431358337402</real>
+					<real>0.78275012969970703</real>
 				</dict>
 				<key>emptyOldPriority</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.731795072555542</real>
+					<real>0.78276395797729492</real>
 				</dict>
 				<key>multipleDisconnectedSameAnchor</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7114081382751465</real>
+					<real>0.78277397155761719</real>
 				</dict>
 				<key>noDisconnected</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.5416309833526611</real>
+					<real>0.78274703025817871</real>
 				</dict>
 				<key>reorderPreservesAnchors</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.5062577724456787</real>
+					<real>0.78287482261657715</real>
 				</dict>
 			</dict>
 			<key>MockDeviceVolumeProvidingContractTests</key>
@@ -2678,7 +2678,7 @@
 				<key>overrideResolutionByUID</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7318570613861084</real>
+					<real>0.76697587966918945</real>
 				</dict>
 			</dict>
 			<key>MuteButtonColorInvariantTests</key>
@@ -2686,12 +2686,12 @@
 				<key>mutedIndicatorIsRedDominantDark</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84939312934875488</real>
+					<real>0.7655949592590332</real>
 				</dict>
 				<key>mutedIndicatorIsRedDominantLight</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.8493499755859375</real>
+					<real>0.76565313339233398</real>
 				</dict>
 			</dict>
 			<key>NaNMidBufferTests</key>
@@ -2699,12 +2699,12 @@
 				<key>nanMidBufferNotCaughtBySafetyNet</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7240262031555176</real>
+					<real>0.78267002105712891</real>
 				</dict>
 				<key>nanPropagatesViaDelayStateToNextCall</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7238278388977051</real>
+					<real>0.87288188934326172</real>
 				</dict>
 			</dict>
 			<key>NonSpeakerBaselineTests</key>
@@ -2712,42 +2712,42 @@
 				<key>defaultAsset</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7236418724060059</real>
+					<real>0.7827458381652832</real>
 				</dict>
 				<key>defaultIgnoresMute</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235012054443359</real>
+					<real>0.78270792961120605</real>
 				</dict>
 				<key>deviceIgnoresMute</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.723520040512085</real>
+					<real>0.78276610374450684</real>
 				</dict>
 				<key>deviceSymbol</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235679626464844</real>
+					<real>0.78100085258483887</real>
 				</dict>
 				<key>equalizerIgnoresMute</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.723560094833374</real>
+					<real>0.78277420997619629</real>
 				</dict>
 				<key>equalizerSymbol</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235181331634521</real>
+					<real>0.78280091285705566</real>
 				</dict>
 				<key>waveformIgnoresMute</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237007617950439</real>
+					<real>0.78276610374450684</real>
 				</dict>
 				<key>waveformSymbol</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.72353196144104</real>
+					<real>0.78270721435546875</real>
 				</dict>
 			</dict>
 			<key>OutputGateArmedTests</key>
@@ -2755,17 +2755,17 @@
 				<key>armedAndNonSilentEntersRamping</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1844329833984375</real>
+					<real>0.75474405288696289</real>
 				</dict>
 				<key>armedAndSilentStaysArmed</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1845340728759766</real>
+					<real>0.75778794288635254</real>
 				</dict>
 				<key>peakEqualToThresholdIsSilent</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1821348667144775</real>
+					<real>0.75863504409790039</real>
 				</dict>
 			</dict>
 			<key>OutputGateCycleTests</key>
@@ -2773,7 +2773,7 @@
 				<key>fullReArmCycle</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235498428344727</real>
+					<real>1.2403531074523926</real>
 				</dict>
 			</dict>
 			<key>OutputGateOpenTests</key>
@@ -2781,17 +2781,17 @@
 				<key>openAndNonSilentResetsSilentCounter</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94104909896850586</real>
+					<real>0.76514077186584473</real>
 				</dict>
 				<key>openAndSilentAccumulatesSilentCounter</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.9410557746887207</real>
+					<real>0.76512002944946289</real>
 				</dict>
 				<key>openReArmsAfterSilenceHold</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94104385375976562</real>
+					<real>0.76623821258544922</real>
 				</dict>
 			</dict>
 			<key>OutputGateRampingTests</key>
@@ -2799,7 +2799,7 @@
 				<key>rampingReachesOpenAtProgressOne</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7239949703216553</real>
+					<real>1.2211339473724365</real>
 				</dict>
 			</dict>
 			<key>PopupKeyboardNavModelTests</key>
@@ -2807,77 +2807,77 @@
 				<key>defaultFocusNilUIDReturnsFirstRow</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.251352071762085</real>
+					<real>0.76693892478942871</real>
 				</dict>
 				<key>defaultFocusOnEmptyReturnsNil</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1844277381896973</real>
+					<real>0.76685619354248047</real>
 				</dict>
 				<key>defaultFocusPrefersDefaultOutputDevice</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1844310760498047</real>
+					<real>0.76714920997619629</real>
 				</dict>
 				<key>defaultFocusUnknownUIDFallsBackToFirstRow</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1843061447143555</real>
+					<real>0.76686692237854004</real>
 				</dict>
 				<key>nextAfterFirstDeviceReturnsSecondDevice</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1844079494476318</real>
+					<real>0.76685309410095215</real>
 				</dict>
 				<key>nextAfterLastDeviceCrossesIntoApps</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1844472885131836</real>
+					<real>0.78284907341003418</real>
 				</dict>
 				<key>nextAfterLastReturnsNilNoWrap</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1841270923614502</real>
+					<real>0.76672816276550293</real>
 				</dict>
 				<key>nextAfterNilOnEmptyReturnsNil</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.2854750156402588</real>
+					<real>0.76699519157409668</real>
 				</dict>
 				<key>nextAfterNilReturnsFirstRow</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.184237003326416</real>
+					<real>0.78270792961120605</real>
 				</dict>
 				<key>previousBeforeFirstAppCrossesBackIntoDevices</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.2513809204101562</real>
+					<real>0.78112983703613281</real>
 				</dict>
 				<key>previousBeforeFirstRowReturnsNil</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1842131614685059</real>
+					<real>0.76690196990966797</real>
 				</dict>
 				<key>previousBeforeNilReturnsNil</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1844029426574707</real>
+					<real>0.76935410499572754</real>
 				</dict>
 				<key>syncOrderDropsExitedApps</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1841089725494385</real>
+					<real>0.76697397232055664</real>
 				</dict>
 				<key>syncOrderEditingPriorityClearsList</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1843657493591309</real>
+					<real>0.78114771842956543</real>
 				</dict>
 				<key>syncOrderProducesDevicesThenApps</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1844241619110107</real>
+					<real>0.78285908699035645</real>
 				</dict>
 			</dict>
 			<key>ProcessNameLookupTests</key>
@@ -2885,22 +2885,22 @@
 				<key>bogusLargePID</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1841170787811279</real>
+					<real>1.6231627464294434</real>
 				</dict>
 				<key>currentProcess</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.2334260940551758</real>
+					<real>1.6065409183502197</real>
 				</dict>
 				<key>negativePID</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1841170787811279</real>
+					<real>1.6485331058502197</real>
 				</dict>
 				<key>pidZero</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.2335708141326904</real>
+					<real>1.6065759658813477</real>
 				</dict>
 			</dict>
 			<key>ProcessingChainTests</key>
@@ -2908,32 +2908,32 @@
 				<key>eqBeforeLimiter</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94073700904846191</real>
+					<real>1.0825760364532471</real>
 				</dict>
 				<key>eqDisabledPassthrough</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94106221199035645</real>
+					<real>1.2238659858703613</real>
 				</dict>
 				<key>flatEQPassthrough</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94821596145629883</real>
+					<real>1.0825328826904297</real>
 				</dict>
 				<key>limiterEngagesOnBoost</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94106602668762207</real>
+					<real>1.2238240242004395</real>
 				</dict>
 				<key>trailingSamplesZeroed</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94105195999145508</real>
+					<real>1.0989830493927002</real>
 				</dict>
 				<key>zeroVolumeProducesZeros</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94816303253173828</real>
+					<real>1.0824968814849854</real>
 				</dict>
 			</dict>
 			<key>RapidSettingsChurnTests</key>
@@ -2941,17 +2941,17 @@
 				<key>rapidSettingsChangesLastOneWins</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.724118709564209</real>
+					<real>1.6065318584442139</real>
 				</dict>
 				<key>rapidSwapSetupStability</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7241239547729492</real>
+					<real>1.6481637954711914</real>
 				</dict>
 				<key>settingsChangeExtremeToFlat</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7319869995117188</real>
+					<real>1.6696012020111084</real>
 				</dict>
 			</dict>
 			<key>RecordingProcessTapControllerContractTests</key>
@@ -2959,17 +2959,17 @@
 				<key>convenienceActivateRoutesThroughInitial</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84897327423095703</real>
+					<real>1.1492841243743896</real>
 				</dict>
 				<key>defaultsMatchProductionController</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84899997711181641</real>
+					<real>1.1492321491241455</real>
 				</dict>
 				<key>recordsCallOrder</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84898495674133301</real>
+					<real>1.098740816116333</real>
 				</dict>
 			</dict>
 			<key>ScrollWheelStepTests</key>
@@ -2977,52 +2977,52 @@
 				<key>clampLower</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7954273223876953</real>
+					<real>1.1597540378570557</real>
 				</dict>
 				<key>clampUpper</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7954740524291992</real>
+					<real>1.1597573757171631</real>
 				</dict>
 				<key>directionInversion</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7953641414642334</real>
+					<real>1.2082219123840332</real>
 				</dict>
 				<key>floatBinding</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7953529357910156</real>
+					<real>1.1921670436859131</real>
 				</dict>
 				<key>momentumDrop</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.79532790184021</real>
+					<real>1.1412773132324219</real>
 				</dict>
 				<key>negativeDelta</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7953412532806396</real>
+					<real>1.2406890392303467</real>
 				</dict>
 				<key>nonPreciseClick</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7953362464904785</real>
+					<real>1.159752368927002</real>
 				</dict>
 				<key>nonPreciseLargeDelta</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7954812049865723</real>
+					<real>1.1412811279296875</real>
 				</dict>
 				<key>precisePoint</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.79538893699646</real>
+					<real>1.2082469463348389</real>
 				</dict>
 				<key>zeroDelta</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7953259944915771</real>
+					<real>1.2406847476959229</real>
 				</dict>
 			</dict>
 			<key>SettingsJSONTests</key>
@@ -3030,42 +3030,42 @@
 				<key>defaultRoundTrip</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235710620880127</real>
+					<real>0.7811429500579834</real>
 				</dict>
 				<key>emptyJSONDefaults</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7239160537719727</real>
+					<real>0.7668912410736084</real>
 				</dict>
 				<key>invalidDefaultVolumeReset</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237007617950439</real>
+					<real>0.76687288284301758</real>
 				</dict>
 				<key>negativeVolumesFiltered</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237029075622559</real>
+					<real>0.78111791610717773</real>
 				</dict>
 				<key>nonFiniteVolumesCannotEncode</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7236227989196777</real>
+					<real>0.7668609619140625</real>
 				</dict>
 				<key>populatedRoundTrip</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.723567008972168</real>
+					<real>0.7669517993927002</real>
 				</dict>
 				<key>unknownKeysIgnored</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7236652374267578</real>
+					<real>0.76696372032165527</real>
 				</dict>
 				<key>volumeClampedAboveOne</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237250804901123</real>
+					<real>0.78113889694213867</real>
 				</dict>
 			</dict>
 			<key>SettingsManagerAppSettingsBindingTests</key>
@@ -3073,17 +3073,17 @@
 				<key>directAssignmentEquivalentToUpdate</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.093025684356689453</real>
+					<real>0.28717613220214844</real>
 				</dict>
 				<key>directAssignmentForwardsLaunchAtLogin</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.092767238616943359</real>
+					<real>0.28690409660339355</real>
 				</dict>
 				<key>directAssignmentPersists</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.092974185943603516</real>
+					<real>0.28702616691589355</real>
 				</dict>
 			</dict>
 			<key>SettingsManagerDeviceVolumeTierOverrideRoundTrip</key>
@@ -3091,12 +3091,12 @@
 				<key>defaultEmpty</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84922695159912109</real>
+					<real>1.2212972640991211</real>
 				</dict>
 				<key>overrideRoundTrip</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84922575950622559</real>
+					<real>1.221235990524292</real>
 				</dict>
 			</dict>
 			<key>SettingsManagerHiddenDevicesTests</key>
@@ -3104,27 +3104,27 @@
 				<key>inputHideUnhideParity</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7950100898742676</real>
+					<real>1.2239620685577393</real>
 				</dict>
 				<key>outputAndInputSetsIndependent</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7950191497802734</real>
+					<real>1.2235441207885742</real>
 				</dict>
 				<key>outputHideUnhideParity</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7778818607330322</real>
+					<real>1.221083402633667</real>
 				</dict>
 				<key>toggleInputFlipsFromPersisted</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7950677871704102</real>
+					<real>1.2213120460510254</real>
 				</dict>
 				<key>toggleOutputFlipsFromPersisted</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7778770923614502</real>
+					<real>1.2236349582672119</real>
 				</dict>
 			</dict>
 			<key>SettingsMigrationV10toV11Tests</key>
@@ -3132,22 +3132,22 @@
 				<key>decodeV10TolerantOfRemovedKey</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84937191009521484</real>
+					<real>1.5421180725097656</real>
 				</dict>
 				<key>decodeV11Fixture</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84928703308105469</real>
+					<real>1.2210099697113037</real>
 				</dict>
 				<key>defaultSettingsVersionIsTwelve</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84934306144714355</real>
+					<real>1.2213659286499023</real>
 				</dict>
 				<key>loadV10FromDisk</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84935879707336426</real>
+					<real>1.4624950885772705</real>
 				</dict>
 			</dict>
 			<key>SettingsVersionTests</key>
@@ -3155,22 +3155,22 @@
 				<key>decodeWithUserEQPresets</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237040996551514</real>
+					<real>1.1439049243927002</real>
 				</dict>
 				<key>decodeWithoutUserEQPresets</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237238883972168</real>
+					<real>1.1439130306243896</real>
 				</dict>
 				<key>defaultUserEQPresetsEmpty</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.723743200302124</real>
+					<real>1.1439251899719238</real>
 				</dict>
 				<key>defaultVersion</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237067222595215</real>
+					<real>1.1439399719238281</real>
 				</dict>
 			</dict>
 			<key>ShortcutCodableTests</key>
@@ -3178,12 +3178,12 @@
 				<key>inverse</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.090317249298095703</real>
+					<real>0.079259157180786133</real>
 				</dict>
 				<key>roundTrip</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237091064453125</real>
+					<real>1.143855094909668</real>
 				</dict>
 			</dict>
 			<key>ShortcutsRegistryTests</key>
@@ -3191,82 +3191,82 @@
 				<key>dispatchFrontmostMuteHappyPath</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.6339831352233887</real>
+					<real>1.2441070079803467</real>
 				</dict>
 				<key>dispatchFrontmostVolumeDownClampsAtZero</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.5587108135223389</real>
+					<real>1.2210090160369873</real>
 				</dict>
 				<key>dispatchFrontmostVolumeUpHappyPath</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.6765346527099609</real>
+					<real>1.3341431617736816</real>
 				</dict>
 				<key>dispatchNoMatchingApp</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.5587239265441895</real>
+					<real>1.2210133075714111</real>
 				</dict>
 				<key>dispatchNoTarget</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.5587337017059326</real>
+					<real>1.2210068702697754</real>
 				</dict>
 				<key>dispatchTogglePopup</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.5587019920349121</real>
+					<real>1.221005916595459</real>
 				</dict>
 				<key>dispatchVolumeDownAutoMutesAtZero</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.541640043258667</real>
+					<real>1.2210090160369873</real>
 				</dict>
 				<key>dispatchVolumeDownUnmutesMutedButAudibleApp</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.576685905456543</real>
+					<real>1.6698119640350342</real>
 				</dict>
 				<key>dispatchVolumeUpNoMuteTransitionIfAlreadyUnmuted</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.6767289638519287</real>
+					<real>1.2210161685943604</real>
 				</dict>
 				<key>dispatchVolumeUpUnmutesMutedApp</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.5766730308532715</real>
+					<real>1.2209839820861816</real>
 				</dict>
 				<key>nameStable</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.6765272617340088</real>
+					<real>1.3178863525390625</real>
 				</dict>
 				<key>recordCallbackClearsOnNil</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.6765730381011963</real>
+					<real>1.2212450504302979</real>
 				</dict>
 				<key>recordCallbackWritesBack</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.6572668552398682</real>
+					<real>1.2210099697113037</real>
 				</dict>
 				<key>startIsIdempotent</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7114379405975342</real>
+					<real>1.3019571304321289</real>
 				</dict>
 				<key>startLoadsStoredShortcuts</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.676584005355835</real>
+					<real>1.2210097312927246</real>
 				</dict>
 				<key>supportsRepeatFlag</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.6766560077667236</real>
+					<real>1.3019490242004395</real>
 				</dict>
 			</dict>
 			<key>SoftLimiterBufferTests</key>
@@ -3274,27 +3274,27 @@
 				<key>bufferAllMaxValue</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7631418704986572</real>
+					<real>1.2238020896911621</real>
 				</dict>
 				<key>bufferBelowThreshold</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7319266796112061</real>
+					<real>1.2240359783172607</real>
 				</dict>
 				<key>bufferExactlyAtThreshold</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7317440509796143</real>
+					<real>1.224045991897583</real>
 				</dict>
 				<key>bufferImpulseSpike</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7779607772827148</real>
+					<real>1.2241449356079102</real>
 				</dict>
 				<key>bufferMixedLevels</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7631471157073975</real>
+					<real>1.223825216293335</real>
 				</dict>
 			</dict>
 			<key>SoftLimiterEdgeTests</key>
@@ -3302,27 +3302,27 @@
 				<key>constantsConsistent</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.82631778717041016</real>
+					<real>1.6961097717285156</real>
 				</dict>
 				<key>nanInput</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84779500961303711</real>
+					<real>1.6960921287536621</real>
 				</dict>
 				<key>negativeInfinity</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.82632780075073242</real>
+					<real>1.6961023807525635</real>
 				</dict>
 				<key>positiveInfinity</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.82630109786987305</real>
+					<real>1.6961081027984619</real>
 				</dict>
 				<key>subnormalInput</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84127473831176758</real>
+					<real>1.6961112022399902</real>
 				</dict>
 			</dict>
 			<key>SoftLimiterPropertiesTests</key>
@@ -3330,37 +3330,37 @@
 				<key>asymptoticConvergence</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7112607955932617</real>
+					<real>1.6229510307312012</real>
 				</dict>
 				<key>continuityAtThreshold</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.6766149997711182</real>
+					<real>1.6228139400482178</real>
 				</dict>
 				<key>decreasingDerivative</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7111001014709473</real>
+					<real>1.6228389739990234</real>
 				</dict>
 				<key>derivativeContinuityAtThreshold</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.6767163276672363</real>
+					<real>1.6228389739990234</real>
 				</dict>
 				<key>monotonicityNegative</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7240321636199951</real>
+					<real>1.6228470802307129</real>
 				</dict>
 				<key>monotonicityPositive</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7112157344818115</real>
+					<real>1.6228570938110352</real>
 				</dict>
 				<key>zeroPassthrough</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.6939971446990967</real>
+					<real>1.557513952255249</real>
 				</dict>
 			</dict>
 			<key>SpeakerBaselineTests</key>
@@ -3368,22 +3368,22 @@
 				<key>speakerMutedOverridesVolume</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94907212257385254</real>
+					<real>0.76690196990966797</real>
 				</dict>
 				<key>speakerUnmutedFull</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94909191131591797</real>
+					<real>0.78293871879577637</real>
 				</dict>
 				<key>speakerUnmutedMid</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94909119606018066</real>
+					<real>0.76690316200256348</real>
 				</dict>
 				<key>speakerUnmutedZero</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94908618927001953</real>
+					<real>0.76673436164855957</real>
 				</dict>
 			</dict>
 			<key>StyleIconNameConsistencyTests</key>
@@ -3391,22 +3391,22 @@
 				<key>defaultMatches</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.724071741104126</real>
+					<real>1.6960866451263428</real>
 				</dict>
 				<key>deviceMatchesDefaultIconName</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7318108081817627</real>
+					<real>1.6961081027984619</real>
 				</dict>
 				<key>equalizerMatches</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7239599227905273</real>
+					<real>1.6960830688476562</real>
 				</dict>
 				<key>waveformMatches</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7239851951599121</real>
+					<real>1.696098804473877</real>
 				</dict>
 			</dict>
 			<key>TahoeStyleHUDNameFontTests</key>
@@ -3414,7 +3414,7 @@
 				<key>nameFontIsRowNameBold</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235071659088135</real>
+					<real>0.82431411743164062</real>
 				</dict>
 			</dict>
 			<key>TapKeepAliveDecisionTests</key>
@@ -3422,37 +3422,37 @@
 				<key>bluetoothOutputExcludedByDefault</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7238268852233887</real>
+					<real>0.76220417022705078</real>
 				</dict>
 				<key>bluetoothOutputOptIn</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7238280773162842</real>
+					<real>0.76199507713317871</real>
 				</dict>
 				<key>pidReuseReleasesTap</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7238280773162842</real>
+					<real>0.76210689544677734</real>
 				</dict>
 				<key>pinnedIdleAppKeepsTap</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237329483032227</real>
+					<real>0.76210284233093262</real>
 				</dict>
 				<key>quitAppReleasesTap</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7238318920135498</real>
+					<real>0.76547813415527344</real>
 				</dict>
 				<key>settingOffDisablesKeepAlive</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7238383293151855</real>
+					<real>0.76213693618774414</real>
 				</dict>
 				<key>unpinnedIdleAppIsCleanedUp</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7238328456878662</real>
+					<real>0.76196885108947754</real>
 				</dict>
 			</dict>
 			<key>TargetAppResolverTests</key>
@@ -3460,62 +3460,62 @@
 				<key>allBlocklistedFallsBackToFrontmost</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235610485076904</real>
+					<real>1.240300178527832</real>
 				</dict>
 				<key>blocklistFiltersSystemDaemons</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7236833572387695</real>
+					<real>1.2402901649475098</real>
 				</dict>
 				<key>coldLaunchReturnsNil</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235569953918457</real>
+					<real>1.2402958869934082</real>
 				</dict>
 				<key>fallbackToFirstCandidate</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235748767852783</real>
+					<real>1.2403039932250977</real>
 				</dict>
 				<key>fineTuneActivationDoesNotPoisonCache</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.723585844039917</real>
+					<real>1.2401490211486816</real>
 				</dict>
 				<key>fineTuneFrontmostUsesCachedFallback</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7236108779907227</real>
+					<real>1.2238399982452393</real>
 				</dict>
 				<key>frontmostInCandidatesWins</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.723607063293457</real>
+					<real>1.2401540279388428</real>
 				</dict>
 				<key>ownBundleIDFilteredFromCandidates</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.723560094833374</real>
+					<real>1.240278959274292</real>
 				</dict>
 				<key>returnsFrontmostWhenNotFineTune</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235672473907471</real>
+					<real>1.2403080463409424</real>
 				</dict>
 				<key>singleAudibleCandidate</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235488891601562</real>
+					<real>1.2401349544525146</real>
 				</dict>
 				<key>stickyBreaksWhenTargetQuits</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235620021820068</real>
+					<real>1.2402870655059814</real>
 				</dict>
 				<key>stickyLastTargetWhenFrontmostNotAudible</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235608100891113</real>
+					<real>1.2403149604797363</real>
 				</dict>
 			</dict>
 			<key>UserEQPresetCRUDTests</key>
@@ -3523,87 +3523,87 @@
 				<key>createAfterDelete</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7952313423156738</real>
+					<real>1.0825872421264648</real>
 				</dict>
 				<key>createDuplicateNames</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7993478775024414</real>
+					<real>1.0825619697570801</real>
 				</dict>
 				<key>createEmptyName</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.795241117477417</real>
+					<real>1.0825037956237793</real>
 				</dict>
 				<key>createGeneratesUniqueID</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7993299961090088</real>
+					<real>1.2238478660583496</real>
 				</dict>
 				<key>createReturnsPreset</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.795234203338623</real>
+					<real>1.0824859142303467</real>
 				</dict>
 				<key>deleteAllOneByOne</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7952568531036377</real>
+					<real>1.2238152027130127</real>
 				</dict>
 				<key>deleteExisting</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7993931770324707</real>
+					<real>1.082582950592041</real>
 				</dict>
 				<key>deleteNonexistentID</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7952771186828613</real>
+					<real>1.0991790294647217</real>
 				</dict>
 				<key>deleteOnlyTarget</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7953078746795654</real>
+					<real>1.2238600254058838</real>
 				</dict>
 				<key>doubleDelete</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7952420711517334</real>
+					<real>1.082650899887085</real>
 				</dict>
 				<key>getPresetsEmpty</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7990939617156982</real>
+					<real>1.0825207233428955</real>
 				</dict>
 				<key>getPresetsReturnsAll</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7991569042205811</real>
+					<real>1.0825209617614746</real>
 				</dict>
 				<key>getPresetsSortedNewestFirst</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7952489852905273</real>
+					<real>1.098928689956665</real>
 				</dict>
 				<key>renameExisting</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7990899085998535</real>
+					<real>1.0825257301330566</real>
 				</dict>
 				<key>renameNonexistentID</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7993817329406738</real>
+					<real>1.0824952125549316</real>
 				</dict>
 				<key>renamePreservesBandGains</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7952430248260498</real>
+					<real>1.082672119140625</real>
 				</dict>
 				<key>renameToEmpty</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7952539920806885</real>
+					<real>1.082521915435791</real>
 				</dict>
 			</dict>
 			<key>UserEQPresetModelTests</key>
@@ -3611,27 +3611,27 @@
 				<key>codableRoundTrip</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.6939480304718018</real>
+					<real>1.1440179347991943</real>
 				</dict>
 				<key>defaultInitUniqueIDs</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7113749980926514</real>
+					<real>1.1416561603546143</real>
 				</dict>
 				<key>differentIDsNotEqual</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7113170623779297</real>
+					<real>1.1439681053161621</real>
 				</dict>
 				<key>equatable</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7111568450927734</real>
+					<real>1.1492378711700439</real>
 				</dict>
 				<key>isEnabledCarriedInSettings</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7112538814544678</real>
+					<real>1.1642708778381348</real>
 				</dict>
 			</dict>
 			<key>UserEQPresetNameValidationTests</key>
@@ -3639,67 +3639,67 @@
 				<key>createTrimsTabsAndNewlines</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.8491511344909668</real>
+					<real>1.2211880683898926</real>
 				</dict>
 				<key>createTrimsWhitespace</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84914994239807129</real>
+					<real>1.2213220596313477</real>
 				</dict>
 				<key>createWhitespaceOnlyName</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84916090965270996</real>
+					<real>1.2210719585418701</real>
 				</dict>
 				<key>dedupChainSkipsExisting</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.8492581844329834</real>
+					<real>1.2211558818817139</real>
 				</dict>
 				<key>dedupWithExistingParenNumbers</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84915876388549805</real>
+					<real>1.2211089134216309</real>
 				</dict>
 				<key>deleteFreesNameForReuse</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84925198554992676</real>
+					<real>1.2211470603942871</real>
 				</dict>
 				<key>finderDedupChain</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84928202629089355</real>
+					<real>1.2211220264434814</real>
 				</dict>
 				<key>multipleUntitledDedup</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84929537773132324</real>
+					<real>1.2211141586303711</real>
 				</dict>
 				<key>renameCollisionAutoSuffixes</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84917712211608887</real>
+					<real>1.2212040424346924</real>
 				</dict>
 				<key>renameToSelfNoSuffix</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84912610054016113</real>
+					<real>1.2210297584533691</real>
 				</dict>
 				<key>renameTrimmedCollision</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84919214248657227</real>
+					<real>1.2214040756225586</real>
 				</dict>
 				<key>renameTrimsWhitespace</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84918594360351562</real>
+					<real>1.2213547229766846</real>
 				</dict>
 				<key>renameWhitespaceOnlyNoOp</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84925270080566406</real>
+					<real>1.221282958984375</real>
 				</dict>
 			</dict>
 			<key>UserEQPresetPersistenceTests</key>
@@ -3707,22 +3707,22 @@
 				<key>deletePersistedRoundTrip</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.0147659778594971</real>
+					<real>0.99281430244445801</real>
 				</dict>
 				<key>multiplePresetsRoundTrip</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.68830704689025879</real>
+					<real>0.62706208229064941</real>
 				</dict>
 				<key>persistenceRoundTrip</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.092622995376586914</real>
+					<real>0.063538789749145508</real>
 				</dict>
 				<key>renamePersistedRoundTrip</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.49014616012573242</real>
+					<real>0.51493096351623535</real>
 				</dict>
 			</dict>
 			<key>VolumeBucketBoundaryTests</key>
@@ -3730,62 +3730,62 @@
 				<key>fullVolume</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84918904304504395</real>
+					<real>1.0987851619720459</real>
 				</dict>
 				<key>infiniteVolume</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84904694557189941</real>
+					<real>1.09883713722229</real>
 				</dict>
 				<key>justBelowLowMidBoundary</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84896206855773926</real>
+					<real>1.0988812446594238</real>
 				</dict>
 				<key>justBelowMidHighBoundary</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84911227226257324</real>
+					<real>1.0987961292266846</real>
 				</dict>
 				<key>justBelowOnePercent</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84903383255004883</real>
+					<real>1.0988211631774902</real>
 				</dict>
 				<key>lowMidBoundary</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84909200668334961</real>
+					<real>1.0988430976867676</real>
 				</dict>
 				<key>midHighBoundary</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84896683692932129</real>
+					<real>1.0989072322845459</real>
 				</dict>
 				<key>negativeVolume</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84914612770080566</real>
+					<real>1.0989401340484619</real>
 				</dict>
 				<key>notANumber</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84910488128662109</real>
+					<real>1.0988340377807617</real>
 				</dict>
 				<key>oneBoundary</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84899187088012695</real>
+					<real>1.0987987518310547</real>
 				</dict>
 				<key>overdrive</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.8490447998046875</real>
+					<real>1.0988500118255615</real>
 				</dict>
 				<key>zeroVolume</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84897994995117188</real>
+					<real>1.0988092422485352</real>
 				</dict>
 			</dict>
 			<key>VolumeBucketSymbolNameTests</key>
@@ -3793,22 +3793,22 @@
 				<key>highSymbol</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1844511032104492</real>
+					<real>1.6961090564727783</real>
 				</dict>
 				<key>lowSymbol</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1844799518585205</real>
+					<real>1.6936988830566406</real>
 				</dict>
 				<key>midSymbol</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.184241771697998</real>
+					<real>1.6961967945098877</real>
 				</dict>
 				<key>zeroSymbol</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1841168403625488</real>
+					<real>1.693723201751709</real>
 				</dict>
 			</dict>
 			<key>VolumeControlTierCodableTests</key>
@@ -3816,17 +3816,17 @@
 				<key>dictionaryRoundTrip</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94816422462463379</real>
+					<real>1.0176632404327393</real>
 				</dict>
 				<key>rawStringEncoding</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94105386734008789</real>
+					<real>1.0339100360870361</real>
 				</dict>
 				<key>roundTripAllCases</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.94106411933898926</real>
+					<real>0.98545408248901367</real>
 				</dict>
 			</dict>
 			<key>VolumeFeedbackCooldownTests</key>
@@ -3834,12 +3834,12 @@
 				<key>boundaryExactlyAtCooldownPasses</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.84892725944519043</real>
+					<real>1.082650899887085</real>
 				</dict>
 				<key>leadingEdgeGate</key>
 				<dict>
 					<key>mrnet</key>
-					<real>0.88239407539367676</real>
+					<real>1.0339610576629639</real>
 				</dict>
 			</dict>
 			<key>VolumeFeedbackGainTests</key>
@@ -3847,17 +3847,17 @@
 				<key>ddcTierPlaysFullScale</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7234559059143066</real>
+					<real>1.6961891651153564</real>
 				</dict>
 				<key>hardwareTierPlaysFullScale</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.723668098449707</real>
+					<real>1.6938917636871338</real>
 				</dict>
 				<key>softwareTierMatchesTapMapping</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.723665714263916</real>
+					<real>1.6937711238861084</real>
 				</dict>
 			</dict>
 			<key>VolumeHotkeyStepCoverageTests</key>
@@ -3865,7 +3865,7 @@
 				<key>normalIs16Presses</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7239880561828613</real>
+					<real>1.149256706237793</real>
 				</dict>
 			</dict>
 			<key>VolumeMappingGainToSliderTests</key>
@@ -3873,27 +3873,27 @@
 				<key>gainAboveOneClamped</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7949841022491455</real>
+					<real>1.6942007541656494</real>
 				</dict>
 				<key>gainNegativeClamped</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7951109409332275</real>
+					<real>1.6228139400482178</real>
 				</dict>
 				<key>gainOneReturnsOne</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7949860095977783</real>
+					<real>1.6228601932525635</real>
 				</dict>
 				<key>gainQuarterReturnsHalf</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7950277328491211</real>
+					<real>1.6942629814147949</real>
 				</dict>
 				<key>gainZeroReturnsZero</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7950527667999268</real>
+					<real>1.6481680870056152</real>
 				</dict>
 			</dict>
 			<key>VolumeMappingSliderToGainTests</key>
@@ -3901,27 +3901,27 @@
 				<key>sliderAboveOneClamped</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7240357398986816</real>
+					<real>1.1439211368560791</real>
 				</dict>
 				<key>sliderHalfReturnsQuarter</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7240180969238281</real>
+					<real>1.1439251899719238</real>
 				</dict>
 				<key>sliderNegativeClamped</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7111639976501465</real>
+					<real>1.1512298583984375</real>
 				</dict>
 				<key>sliderOneReturnsUnity</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7240149974822998</real>
+					<real>1.1492350101470947</real>
 				</dict>
 				<key>sliderZeroReturnsSilence</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7257161140441895</real>
+					<real>1.1492369174957275</real>
 				</dict>
 			</dict>
 			<key>VolumeMappingTierTests</key>
@@ -3929,22 +3929,22 @@
 				<key>clampsOutOfRange</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1843321323394775</real>
+					<real>1.2210121154785156</real>
 				</dict>
 				<key>ddcIdentity</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1845428943634033</real>
+					<real>1.2213640213012695</real>
 				</dict>
 				<key>hardwareIdentity</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1843521595001221</real>
+					<real>1.2209961414337158</real>
 				</dict>
 				<key>softwareRoundTrip</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.1846129894256592</real>
+					<real>1.2214019298553467</real>
 				</dict>
 			</dict>
 			<key>VolumeRampTests</key>
@@ -3952,57 +3952,57 @@
 				<key>convergenceFromAbove</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.723560094833374</real>
+					<real>1.1442630290985107</real>
 				</dict>
 				<key>convergenceFromBelow</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7236161231994629</real>
+					<real>1.1438541412353516</real>
 				</dict>
 				<key>crossfadeMultiplierEffect</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7236769199371338</real>
+					<real>1.1438999176025391</real>
 				</dict>
 				<key>noOvershootDownward</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7236340045928955</real>
+					<real>1.1439468860626221</real>
 				</dict>
 				<key>noOvershootUpward</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7236471176147461</real>
+					<real>1.1416609287261963</real>
 				</dict>
 				<key>rampSymmetry</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235682010650635</real>
+					<real>1.1440870761871338</real>
 				</dict>
 				<key>rapidTargetReversal</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.723635196685791</real>
+					<real>1.1438920497894287</real>
 				</dict>
 				<key>singleFrameBuffer</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7237067222595215</real>
+					<real>1.1439275741577148</real>
 				</dict>
 				<key>unmuteFromZero</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7238941192626953</real>
+					<real>1.1438589096069336</real>
 				</dict>
 				<key>volumeBoost</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7235767841339111</real>
+					<real>1.1416642665863037</real>
 				</dict>
 				<key>zeroTargetApproachesZero</key>
 				<dict>
 					<key>mrnet</key>
-					<real>1.7236328125</real>
+					<real>1.1439971923828125</real>
 				</dict>
 			</dict>
 		</dict>
