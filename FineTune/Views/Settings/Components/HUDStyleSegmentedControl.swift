@@ -31,7 +31,7 @@ private struct HUDStyleOption: View {
     private var label: String {
         switch style {
         case .tahoe: return "Tahoe"
-        case .classic: return "Classic"
+        case .classic: return String(localized: "Classic")
         }
     }
 

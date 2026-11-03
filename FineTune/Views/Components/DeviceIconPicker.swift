@@ -30,7 +30,7 @@ struct DeviceIconPicker: View {
                     if trimmedQuery.isEmpty {
                         gridSection(title: "Suggested", symbols: suggestedSymbols, highlighted: highlighted)
                         ForEach(DeviceIconCatalog.categories) { category in
-                            gridSection(title: category.name, symbols: category.entries.map(\.symbol), highlighted: highlighted)
+                            gridSection(title: LocalizedStringKey(category.name), symbols: category.entries.map(\.symbol), highlighted: highlighted)
                         }
                     } else {
                         searchResults(highlighted: highlighted)
@@ -81,7 +81,7 @@ struct DeviceIconPicker: View {
     }
 
     @ViewBuilder
-    private func gridSection(title: String, symbols: [String], highlighted: String?) -> some View {
+    private func gridSection(title: LocalizedStringKey, symbols: [String], highlighted: String?) -> some View {
         SectionHeader(title: title)
             .frame(maxWidth: .infinity, alignment: .leading)
         grid(symbols: symbols, highlighted: highlighted)
@@ -192,7 +192,7 @@ private struct IconCell: View {
         .onHover { isHovered = $0 }
         .animation(DesignTokens.Animation.hover, value: isHovered)
         .help(symbol)
-        .accessibilityLabel(DeviceIconCatalog.entry(for: symbol)?.keywords.first?.capitalized ?? symbol)
+        .accessibilityLabel(DeviceIconCatalog.entry(for: symbol)?.accessibilityLabel ?? symbol)
     }
 
     private var fill: Color {

@@ -10,9 +10,9 @@ struct UpdatesTab: View {
         if let date = updateManager.lastUpdateCheckDate {
             let formatter = RelativeDateTimeFormatter()
             formatter.unitsStyle = .abbreviated
-            return "Version \(version) · \(formatter.localizedString(for: date, relativeTo: .now))"
+            return String(localized: "Version \(version) · \(formatter.localizedString(for: date, relativeTo: .now))")
         }
-        return "Version \(version) · Never checked"
+        return String(localized: "Version \(version) · Never checked")
     }
 
     private var automaticallyChecksBinding: Binding<Bool> {
@@ -38,7 +38,7 @@ struct UpdatesTab: View {
                     SettingsRowDivider()
                     SettingsRow(
                         "Last checked",
-                        description: lastCheckDescription
+                        localizedDescription: lastCheckDescription
                     ) {
                         Button("Check Now") {
                             updateManager.checkForUpdates()

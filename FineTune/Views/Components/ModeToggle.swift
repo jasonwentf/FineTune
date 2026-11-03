@@ -7,7 +7,7 @@ struct ModeToggle: View {
 
     @State private var hoveredOption: DeviceSelectionMode?
 
-    private let options: [(mode: DeviceSelectionMode, label: String)] = [
+    private let options: [(mode: DeviceSelectionMode, label: LocalizedStringKey)] = [
         (.single, "Single"),
         (.multi, "Multi")
     ]
@@ -29,7 +29,7 @@ struct ModeToggle: View {
     }
 
     @ViewBuilder
-    private func optionButton(_ optionMode: DeviceSelectionMode, label: String) -> some View {
+    private func optionButton(_ optionMode: DeviceSelectionMode, label: LocalizedStringKey) -> some View {
         let isSelected = mode == optionMode
         let isHovered = hoveredOption == optionMode
 

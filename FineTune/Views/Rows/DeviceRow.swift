@@ -268,7 +268,7 @@ extension DeviceRow {
 
     static func autoEQSubtitle(profileName: String?, isEnabled: Bool) -> String? {
         guard let profileName else { return nil }
-        return isEnabled ? profileName : "\(profileName) (off)"
+        return isEnabled ? profileName : String(localized: "\(profileName) (off)")
     }
 }
 

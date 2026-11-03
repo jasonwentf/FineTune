@@ -7,6 +7,11 @@ enum DeviceIconCatalog {
         let symbol: String
         let keywords: [String]
         var id: String { symbol }
+
+        var accessibilityLabel: String {
+            let key = keywords.first?.capitalized ?? symbol
+            return String(localized: String.LocalizationValue(key))
+        }
     }
 
     struct Category: Identifiable {
@@ -129,6 +134,7 @@ enum DeviceIconCatalog {
         return allEntries.filter { entry in
             entry.symbol.lowercased().contains(q)
                 || entry.keywords.contains { $0.lowercased().contains(q) }
+                || entry.accessibilityLabel.lowercased().contains(q)
         }
     }
 

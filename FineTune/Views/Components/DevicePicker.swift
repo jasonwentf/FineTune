@@ -55,7 +55,7 @@ struct DevicePicker: View {
 
         var name: String {
             switch self {
-            case .systemAudio: return "System Audio"
+            case .systemAudio: return String(localized: "System Audio")
             case .device(let device): return device.name
             }
         }
@@ -85,18 +85,18 @@ struct DevicePicker: View {
             if count == 1 {
                 return validMultiSelections[0].name
             }
-            return "\(count) devices"
+            return String(localized: "\(count) devices")
         }
     }
 
     /// Text for single-mode display (also used as fallback for empty multi-mode)
     private var singleModeText: String {
         if isFollowingDefault {
-            return "System Audio"
+            return String(localized: "System Audio")
         } else if let device = devices.first(where: { $0.uid == selectedDeviceUID }) {
             return device.name
         }
-        return "Select"
+        return String(localized: "Select")
     }
 
     @ViewBuilder
@@ -511,7 +511,7 @@ private struct DevicePickerRow: View {
         switch item {
         case .systemAudio:
             VStack(alignment: .leading, spacing: 1) {
-                Text("System Audio")
+                Text(String(localized: "System Audio"))
                 if isDisabled {
                     Text("Not available in multi mode")
                         .font(DesignTokens.Typography.caption)
@@ -546,9 +546,9 @@ extension DevicePicker {
         case .multi:
             let valid = devices.filter { selectedDeviceUIDs.contains($0.uid) }
             switch valid.count {
-            case 0:  return "Multi"
-            case 1:  return "Multi · \(valid[0].name)"
-            default: return "Multi · \(valid.count) devices"
+            case 0:  return String(localized: "Multi")
+            case 1:  return String(localized: "Multi · \(valid[0].name)")
+            default: return String(localized: "Multi · \(valid.count) devices")
             }
         }
     }
@@ -672,7 +672,7 @@ extension DevicePicker {
                     )
 
                     VStack(alignment: .leading, spacing: 4) {
-                        Text("Mode: \(mode == .single ? "Single" : "Multi")")
+                        Text("Mode: \(mode == .single ? "Single" : String(localized: "Multi"))")
                         if mode == .single {
                             Text("Following default: \(isFollowingDefault ? "Yes" : "No")")
                             if !isFollowingDefault {
