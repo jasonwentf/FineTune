@@ -39,6 +39,16 @@ enum EQPreset: String, CaseIterable, Identifiable {
         case media = "Media"
 
         var id: String { rawValue }
+
+        var displayName: String {
+            switch self {
+            case .utility: return String(localized: "Utility")
+            case .speech: return String(localized: "Speech")
+            case .listening: return String(localized: "Listening")
+            case .music: return String(localized: "Music")
+            case .media: return String(localized: "Media")
+            }
+        }
     }
 
     var category: Category {
@@ -62,26 +72,26 @@ enum EQPreset: String, CaseIterable, Identifiable {
 
     var name: String {
         switch self {
-        case .flat: return "Flat"
-        case .bassBoost: return "Bass Boost"
-        case .bassCut: return "Bass Cut"
-        case .trebleBoost: return "Treble Boost"
-        case .vocalClarity: return "Vocal Clarity"
-        case .podcast: return "Podcast"
-        case .spokenWord: return "Spoken Word"
-        case .loudness: return "Loudness"
-        case .lateNight: return "Late Night"
-        case .smallSpeakers: return "Small Speakers"
-        case .rock: return "Rock"
-        case .pop: return "Pop"
-        case .electronic: return "Electronic"
-        case .jazz: return "Jazz"
-        case .classical: return "Classical"
-        case .hipHop: return "Hip-Hop"
-        case .rnb: return "R&B"
-        case .deep: return "Deep"
-        case .acoustic: return "Acoustic"
-        case .movie: return "Movie"
+        case .flat: return String(localized: "Flat")
+        case .bassBoost: return String(localized: "Bass Boost")
+        case .bassCut: return String(localized: "Bass Cut")
+        case .trebleBoost: return String(localized: "Treble Boost")
+        case .vocalClarity: return String(localized: "Vocal Clarity")
+        case .podcast: return String(localized: "Podcast")
+        case .spokenWord: return String(localized: "Spoken Word")
+        case .loudness: return String(localized: "Loudness")
+        case .lateNight: return String(localized: "Late Night")
+        case .smallSpeakers: return String(localized: "Small Speakers")
+        case .rock: return String(localized: "Rock")
+        case .pop: return String(localized: "Pop")
+        case .electronic: return String(localized: "Electronic")
+        case .jazz: return String(localized: "Jazz")
+        case .classical: return String(localized: "Classical")
+        case .hipHop: return String(localized: "Hip-Hop")
+        case .rnb: return String(localized: "R&B")
+        case .deep: return String(localized: "Deep")
+        case .acoustic: return String(localized: "Acoustic")
+        case .movie: return String(localized: "Movie")
         }
     }
 

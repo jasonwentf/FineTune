@@ -1658,8 +1658,8 @@ final class AudioEngine {
 
     private func showReconnectNotification(deviceName: String, affectedApps: [AudioApp]) {
         let content = UNMutableNotificationContent()
-        content.title = "Audio Device Reconnected"
-        content.body = "\"\(deviceName)\" is back. \(affectedApps.count) app(s) switched back."
+        content.title = String(localized: "Audio Device Reconnected")
+        content.body = String(localized: "\"\(deviceName)\" is back. \(affectedApps.count) app(s) switched back.")
         content.sound = nil
 
         let request = UNNotificationRequest(
@@ -1677,8 +1677,8 @@ final class AudioEngine {
 
     private func showDisconnectNotification(deviceName: String, fallbackName: String, affectedApps: [AudioApp]) {
         let content = UNMutableNotificationContent()
-        content.title = "Audio Device Disconnected"
-        content.body = "\"\(deviceName)\" disconnected. \(affectedApps.count) app(s) switched to \(fallbackName)"
+        content.title = String(localized: "Audio Device Disconnected")
+        content.body = String(localized: "\"\(deviceName)\" disconnected. \(affectedApps.count) app(s) switched to \(fallbackName)")
         content.sound = nil
 
         let request = UNNotificationRequest(
@@ -1782,7 +1782,7 @@ final class AudioEngine {
 
             let affectedApps = apps.filter { followsDefault.contains($0.id) }
             if !affectedApps.isEmpty {
-                let deviceName = deviceMonitor.device(for: newDefaultUID)?.name ?? "Default Output"
+                let deviceName = deviceMonitor.device(for: newDefaultUID)?.name ?? String(localized: "Default Output")
                 logger.info("Default changed to \(deviceName), \(affectedApps.count) app(s) following")
                 if settingsManager.appSettings.showDeviceDisconnectAlerts {
                     showDefaultChangedNotification(newDeviceName: deviceName, affectedApps: affectedApps)
@@ -1793,8 +1793,8 @@ final class AudioEngine {
 
     private func showDefaultChangedNotification(newDeviceName: String, affectedApps: [AudioApp]) {
         let content = UNMutableNotificationContent()
-        content.title = "Default Audio Device Changed"
-        content.body = "\(affectedApps.count) app(s) switched to \"\(newDeviceName)\""
+        content.title = String(localized: "Default Audio Device Changed")
+        content.body = String(localized: "\(affectedApps.count) app(s) switched to \"\(newDeviceName)\"")
         content.sound = nil
 
         let request = UNNotificationRequest(

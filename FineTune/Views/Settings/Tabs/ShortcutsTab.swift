@@ -96,7 +96,7 @@ struct ShortcutsTab: View {
             ForEach(Array(ShortcutAction.allCases.enumerated()), id: \.element) { index, action in
                 if index > 0 { SettingsRowDivider() }
                 SettingsRow(
-                    action.displayName,
+                    localizedTitle: action.displayName,
                     description: description(for: action)
                 ) {
                     KeyboardShortcuts.Recorder(
@@ -110,10 +110,10 @@ struct ShortcutsTab: View {
 
     private func description(for action: ShortcutAction) -> String {
         switch action {
-        case .togglePopup: "Show or hide the menu bar popup"
-        case .targetAppVolumeUp: "Raise volume for the app playing audio"
-        case .targetAppVolumeDown: "Lower volume for the app playing audio"
-        case .targetAppMuteToggle: "Mute or unmute the app playing audio"
+        case .togglePopup: String(localized: "Show or hide the menu bar popup")
+        case .targetAppVolumeUp: String(localized: "Raise volume for the app playing audio")
+        case .targetAppVolumeDown: String(localized: "Lower volume for the app playing audio")
+        case .targetAppMuteToggle: String(localized: "Mute or unmute the app playing audio")
         }
     }
 }

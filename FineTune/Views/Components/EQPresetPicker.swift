@@ -3,7 +3,7 @@ import SwiftUI
 
 // MARK: - Unified Picker Types
 
-/// Sections for the EQ preset picker — "My Presets" at top, then built-in categories.
+/// Sections for the EQ preset picker — String(localized: "My Presets") at top, then built-in categories.
 enum EQPickerSection: Identifiable, Hashable {
     case myPresets
     case builtIn(EQPreset.Category)
@@ -17,8 +17,8 @@ enum EQPickerSection: Identifiable, Hashable {
 
     var title: String {
         switch self {
-        case .myPresets: return "My Presets"
-        case .builtIn(let cat): return cat.rawValue
+        case .myPresets: return String(localized: "My Presets")
+        case .builtIn(let cat): return cat.displayName
         }
     }
 }
@@ -98,7 +98,7 @@ struct EQPresetPicker: View {
             popoverWidth: 170,
             onSelect: handleSelect
         ) { selected in
-            Text(selected?.name ?? "Custom")
+            Text(selected?.name ?? String(localized: "Custom"))
         } itemContent: { item, isSelected in
             if item.isUserPreset {
                 UserPresetItemView(
