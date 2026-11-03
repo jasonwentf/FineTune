@@ -72,6 +72,62 @@ enum AppearancePreference: String, Codable, CaseIterable, Identifiable, CustomSt
     }
 }
 
+// MARK: - Language Preference
+
+/// Interface language. `.system` follows macOS (a Chinese system gets Chinese, anything
+/// else gets English); the other cases pin a language regardless of the system.
+enum LanguagePreference: String, Codable, CaseIterable, Identifiable, CustomStringConvertible {
+    case system
+    case english
+    case simplifiedChinese
+
+    var id: String { rawValue }
+
+    /// Code written into the app's `AppleLanguages`, or `nil` to follow the system.
+    var languageCode: String? {
+        switch self {
+        case .system: return nil
+        case .english: return "en"
+        case .simplifiedChinese: return "zh-Hans"
+        }
+    }
+
+    var description: String {
+        switch self {
+        case .system: return String(localized: "System Default")
+        case .english: return String(localized: "English")
+        // Endonym: the same in every language, so it is deliberately verbatim.
+        case .simplifiedChinese: return "简体中文"
+        }
+    }
+}
+
+/// Applies a `LanguagePreference` to the app's own preferences.
+///
+/// The bundle resolves its strings once, at launch, so a change only takes effect after
+/// relaunching — the UI offers a restart affordance instead of pretending it is live.
+enum LanguagePreferenceStore {
+    static let appleLanguagesKey = "AppleLanguages"
+
+    static func apply(_ preference: LanguagePreference, defaults: UserDefaults = .standard) {
+        guard let code = preference.languageCode else {
+            defaults.removeObject(forKey: appleLanguagesKey)
+            return
+        }
+        defaults.set([code], forKey: appleLanguagesKey)
+    }
+
+    /// Relaunch the app so the new language is picked up from the bundle.
+    static func relaunch() {
+        let path = Bundle.main.bundleURL.path
+        let task = Process()
+        task.executableURL = URL(fileURLWithPath: "/bin/sh")
+        task.arguments = ["-c", "sleep 1; /usr/bin/open \"$1\"", "--", path]
+        try? task.run()
+        NSApp.terminate(nil)
+    }
+}
+
 extension AppearancePreference {
     /// AppKit appearance override. `nil` means "inherit from window or app".
     /// Apply via `nsView.window?.appearance = value` for any `NSWindow`/`NSPanel`

@@ -2109,6 +2109,23 @@
         }
       }
     },
+    "Follow the system, or force a language (needs a restart)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Follow the system, or force a language (needs a restart)"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "跟随系统，或强制使用某种语言（需重启）"
+          }
+        }
+      }
+    },
     "Follows macOS default": {
       "extractionState": "manual",
       "localizations": {
@@ -2802,6 +2819,23 @@
           "stringUnit": {
             "state": "translated",
             "value": "旋钮"
+          }
+        }
+      }
+    },
+    "Language": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Language"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "语言"
           }
         }
       }
@@ -4251,6 +4285,23 @@
         }
       }
     },
+    "Restart": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Restart"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "重启"
+          }
+        }
+      }
+    },
     "Restore Default": {
       "extractionState": "manual",
       "localizations": {
@@ -4910,6 +4961,23 @@
           "stringUnit": {
             "state": "translated",
             "value": "系统音频"
+          }
+        }
+      }
+    },
+    "System Default": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "System Default"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "系统默认"
           }
         }
       }

@@ -7,6 +7,21 @@ struct GeneralTab: View {
     let onResetAll: () -> Void
 
     @State private var showResetConfirmation = false
+    /// Set when the language changes; the bundle only re-resolves on relaunch.
+    @State private var languageNeedsRestart = false
+
+    /// Persists the choice and writes it where the bundle will read it next launch.
+    private var languageBinding: Binding<LanguagePreference> {
+        Binding(
+            get: { settings.appSettings.languagePreference },
+            set: { newValue in
+                guard newValue != settings.appSettings.languagePreference else { return }
+                settings.appSettings.languagePreference = newValue
+                LanguagePreferenceStore.apply(newValue)
+                languageNeedsRestart = true
+            }
+        )
+    }
 
     var body: some View {
         ScrollView {
@@ -51,6 +66,28 @@ struct GeneralTab: View {
                 description: "Match macOS, or lock to Light or Dark"
             ) {
                 ThemeTilePicker(selection: $settings.appSettings.appearance)
+            }
+            SettingsRowDivider()
+            SettingsRow(
+                "Language",
+                description: "Follow the system, or force a language (needs a restart)"
+            ) {
+                HStack(spacing: 8) {
+                    Picker("", selection: languageBinding) {
+                        ForEach(LanguagePreference.allCases) { preference in
+                            Text(preference.description).tag(preference)
+                        }
+                    }
+                    .labelsHidden()
+                    .pickerStyle(.menu)
+                    .controlSize(.small)
+                    .frame(width: 130)
+
+                    if languageNeedsRestart {
+                        Button("Restart") { LanguagePreferenceStore.relaunch() }
+                            .controlSize(.small)
+                    }
+                }
             }
             SettingsRowDivider()
             SettingsRow(

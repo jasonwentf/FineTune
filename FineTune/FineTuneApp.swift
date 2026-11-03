@@ -107,6 +107,9 @@ struct FineTuneApp: App {
         OrphanedTapCleanup.destroyOrphanedDevices()
 
         let settings = SettingsManager()
+        // Keep the app's language preferences in sync with the saved setting, so a reset
+        // to "system" actually takes effect on the next launch.
+        LanguagePreferenceStore.apply(settings.appSettings.languagePreference)
         let profileManager = AutoEQProfileManager()
         let permission = AudioRecordingPermission()
         let engine = AudioEngine(permission: permission, settingsManager: settings, autoEQProfileManager: profileManager)

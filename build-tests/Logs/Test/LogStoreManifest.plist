@@ -6,10 +6,10 @@
 	<integer>13</integer>
 	<key>logs</key>
 	<dict>
-		<key>06DFE481-F869-4B24-96F9-C44E2B7C972A</key>
+		<key>77F761CB-5438-485F-AD21-EE3BBD2BCE22</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>A9608458-D82E-4FAE-929F-61390389D351</string>
+			<string>19062AEF-A5A9-4809-8009-467C9AAA001C</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -21,133 +21,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>1</integer>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.unit.cocoaUnitTest</string>
-			<key>fileName</key>
-			<string>Test-FineTune-2026.11.03_23-34-05-+0800.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasCoverageData</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>T</string>
-				<key>totalCodeCoverage</key>
-				<real>0.41955513100436681</real>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>3</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>1</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>FineTune project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>FineTune</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Test FineTune</string>
-			<key>timeStartedRecording</key>
-			<real>815412845.71152902</real>
-			<key>timeStoppedRecording</key>
-			<real>815412859.39918697</real>
-			<key>title</key>
-			<string>Test FineTune</string>
-			<key>uniqueIdentifier</key>
-			<string>06DFE481-F869-4B24-96F9-C44E2B7C972A</string>
-		</dict>
-		<key>241DC701-B6D9-4B78-ADF8-20A6649293F2</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>260AF984-DD2A-4A76-9DE7-E37D9713A3A2</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>2</integer>
-			</dict>
-			<key>className</key>
-			<string>IDESchemeActionsInvocationRecord</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>com.apple.dt.unit.cocoaUnitTest</string>
-			<key>fileName</key>
-			<string>Test-FineTune-2026.11.03_23-32-37-+0800.xcresult</string>
-			<key>hasAuxiliaryLog</key>
-			<true/>
-			<key>hasCoverageData</key>
-			<true/>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>T</string>
-				<key>totalCodeCoverage</key>
-				<real>0.48392893701235185</real>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
 				<integer>4</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>2</integer>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>FineTune project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>FineTune</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Test FineTune</string>
-			<key>timeStartedRecording</key>
-			<real>815412757.81179595</real>
-			<key>timeStoppedRecording</key>
-			<real>815412782.13584197</real>
-			<key>title</key>
-			<string>Test FineTune</string>
-			<key>uniqueIdentifier</key>
-			<string>241DC701-B6D9-4B78-ADF8-20A6649293F2</string>
-		</dict>
-		<key>60C0D8C5-247F-44B8-B403-C98133C7B9A4</key>
-		<dict>
-			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>93616036-715C-4C62-B2C8-EF31E4C4BD4A</string>
-			<key>auxiliaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-				<key>totalNumberOfAnalyzerIssues</key>
-				<integer>0</integer>
-				<key>totalNumberOfErrors</key>
-				<integer>0</integer>
-				<key>totalNumberOfTestFailures</key>
-				<integer>0</integer>
-				<key>totalNumberOfWarnings</key>
-				<integer>1</integer>
 			</dict>
 			<key>className</key>
 			<string>IDESchemeActionsInvocationRecord</string>
@@ -156,7 +30,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.unit.cocoaUnitTest</string>
 			<key>fileName</key>
-			<string>Test-FineTune-2026.11.03_23-36-53-+0800.xcresult</string>
+			<string>Test-FineTune-2026.11.04_00-57-28-+0800.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasCoverageData</key>
@@ -168,15 +42,15 @@
 				<key>highLevelStatus</key>
 				<string>T</string>
 				<key>totalCodeCoverage</key>
-				<real>0.20180702582428697</real>
+				<real>0.54024353274050119</real>
 				<key>totalNumberOfAnalyzerIssues</key>
 				<integer>0</integer>
 				<key>totalNumberOfErrors</key>
 				<integer>0</integer>
 				<key>totalNumberOfTestFailures</key>
-				<integer>3</integer>
-				<key>totalNumberOfWarnings</key>
 				<integer>1</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>4</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>FineTune project</string>
@@ -187,18 +61,18 @@
 			<key>signature</key>
 			<string>Test FineTune</string>
 			<key>timeStartedRecording</key>
-			<real>815413013.72520304</real>
+			<real>815417848.30933595</real>
 			<key>timeStoppedRecording</key>
-			<real>815413027.72390497</real>
+			<real>815417869.30101097</real>
 			<key>title</key>
 			<string>Test FineTune</string>
 			<key>uniqueIdentifier</key>
-			<string>60C0D8C5-247F-44B8-B403-C98133C7B9A4</string>
+			<string>77F761CB-5438-485F-AD21-EE3BBD2BCE22</string>
 		</dict>
-		<key>D4648666-E911-4CB6-AF9F-005CFB520B70</key>
+		<key>B7397201-D8E8-462B-9DB1-26AA2BCF01AA</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
-			<string>6FF8D286-9B41-4201-92D6-06AF7985F3BE</string>
+			<string>FDE6018C-3EAB-406B-82D3-2B5BF5C96E65</string>
 			<key>auxiliaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -219,7 +93,7 @@
 			<key>domainType</key>
 			<string>com.apple.dt.unit.cocoaUnitTest</string>
 			<key>fileName</key>
-			<string>Test-FineTune-2026.11.03_23-38-01-+0800.xcresult</string>
+			<string>Test-FineTune-2026.11.04_00-57-58-+0800.xcresult</string>
 			<key>hasAuxiliaryLog</key>
 			<true/>
 			<key>hasCoverageData</key>
@@ -231,7 +105,7 @@
 				<key>highLevelStatus</key>
 				<string>W</string>
 				<key>totalCodeCoverage</key>
-				<real>0.4840235609833754</real>
+				<real>0.48342166055170538</real>
 				<key>totalNumberOfAnalyzerIssues</key>
 				<integer>0</integer>
 				<key>totalNumberOfErrors</key>
@@ -250,13 +124,13 @@
 			<key>signature</key>
 			<string>Test FineTune</string>
 			<key>timeStartedRecording</key>
-			<real>815413081.65226197</real>
+			<real>815417878.72414398</real>
 			<key>timeStoppedRecording</key>
-			<real>815413094.28345299</real>
+			<real>815417887.00013196</real>
 			<key>title</key>
 			<string>Test FineTune</string>
 			<key>uniqueIdentifier</key>
-			<string>D4648666-E911-4CB6-AF9F-005CFB520B70</string>
+			<string>B7397201-D8E8-462B-9DB1-26AA2BCF01AA</string>
 		</dict>
 	</dict>
 </dict>

@@ -454,3 +454,56 @@ struct MenuBarIconStyleTests {
         }
     }
 }
+
+// MARK: - Language Preference
+
+@Suite("LanguagePreference — mapping and persistence")
+struct LanguagePreferenceTests {
+    @Test("system follows the OS and writes nothing")
+    func systemFollowsOS() throws {
+        #expect(LanguagePreference.system.languageCode == nil)
+
+        let suite = "LanguagePreferenceTests.system"
+        let defaults = try #require(UserDefaults(suiteName: suite))
+        defaults.removePersistentDomain(forName: suite)
+        defaults.set(["zh-Hans"], forKey: LanguagePreferenceStore.appleLanguagesKey)
+
+        LanguagePreferenceStore.apply(.system, defaults: defaults)
+        // Must check the suite's own domain: `object(forKey:)` falls back to the global
+        // domain, where AppleLanguages is always registered by the system.
+        let domain = defaults.persistentDomain(forName: suite) ?? [:]
+        #expect(domain[LanguagePreferenceStore.appleLanguagesKey] == nil)
+    }
+
+    @Test("explicit languages map to bundle codes")
+    func explicitCodes() throws {
+        #expect(LanguagePreference.english.languageCode == "en")
+        #expect(LanguagePreference.simplifiedChinese.languageCode == "zh-Hans")
+
+        let suite = "LanguagePreferenceTests.explicit"
+        let defaults = try #require(UserDefaults(suiteName: suite))
+        defaults.removePersistentDomain(forName: suite)
+
+        LanguagePreferenceStore.apply(.simplifiedChinese, defaults: defaults)
+        #expect(defaults.stringArray(forKey: LanguagePreferenceStore.appleLanguagesKey) == ["zh-Hans"])
+
+        LanguagePreferenceStore.apply(.english, defaults: defaults)
+        #expect(defaults.stringArray(forKey: LanguagePreferenceStore.appleLanguagesKey) == ["en"])
+    }
+
+    @Test("raw values round-trip through JSON")
+    func codable() throws {
+        for preference in LanguagePreference.allCases {
+            let data = try JSONEncoder().encode(preference)
+            let decoded = try JSONDecoder().decode(LanguagePreference.self, from: data)
+            #expect(decoded == preference)
+        }
+    }
+
+    @Test("missing key decodes as system")
+    func missingDecodesAsSystem() throws {
+        let data = Data("{}".utf8)
+        let decoded = try JSONDecoder().decode(AppSettings.self, from: data)
+        #expect(decoded.languagePreference == .system)
+    }
+}

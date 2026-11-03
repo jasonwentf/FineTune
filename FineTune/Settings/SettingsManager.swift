@@ -58,6 +58,9 @@ nonisolated struct AppSettings: Codable, Equatable {
     // Appearance
     var appearance: AppearancePreference = .system  // Follow system appearance, or lock light/dark
 
+    // Interface language — resolves at launch, so changing it needs a restart.
+    var languagePreference: LanguagePreference = .system
+
     // Popup
     var popupSize: MenuBarPopupSize = .comfortable  // Overall menu bar popup size and density
 
@@ -84,6 +87,7 @@ nonisolated struct AppSettings: Codable, Equatable {
         volumeHotkeyStep = try c.decodeIfPresent(VolumeHotkeyStep.self, forKey: .volumeHotkeyStep) ?? .normal
         customShortcuts = try c.decodeIfPresent([String: ShortcutCodable].self, forKey: .customShortcuts) ?? [:]
         appearance = try c.decodeIfPresent(AppearancePreference.self, forKey: .appearance) ?? .system
+        languagePreference = try c.decodeIfPresent(LanguagePreference.self, forKey: .languagePreference) ?? .system
         popupSize = try c.decodeIfPresent(MenuBarPopupSize.self, forKey: .popupSize) ?? .comfortable
     }
 }
