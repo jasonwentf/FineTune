@@ -54,8 +54,8 @@ private struct BaseMuteButton: View {
     let mutedIcon: String
     let unmutedIcon: String
     let layoutReferenceIcon: String?
-    let mutedHelp: String
-    let unmutedHelp: String
+    let mutedHelp: LocalizedStringKey
+    let unmutedHelp: LocalizedStringKey
     let action: () -> Void
 
     @State private var isPulsing = false

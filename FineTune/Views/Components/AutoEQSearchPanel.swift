@@ -95,7 +95,7 @@ struct AutoEQSearchPanel: View {
     private var cardProfileInfo: (name: String, source: String?)? {
         guard let selectedID = selectedProfileID else { return nil }
         if let profile = profileManager.profile(for: selectedID) {
-            let source = profile.source == .imported ? "Imported" : profile.measuredBy
+            let source = profile.source == .imported ? String(localized: "Imported") : profile.measuredBy
             return (profile.name, source)
         } else if let entry = profileManager.catalogEntry(for: selectedID) {
             return (entry.name, entry.measuredBy)
@@ -280,7 +280,7 @@ struct AutoEQSearchPanel: View {
                     .buttonStyle(.plain)
                     .onHover { starHoveredID = $0 ? id : nil }
                     .animation(DesignTokens.Animation.hover, value: isStarHovered)
-                    .accessibilityLabel(isFavorited ? "Remove from favorites" : "Add to favorites")
+                    .accessibilityLabel(isFavorited ? String(localized: "Remove from favorites") : String(localized: "Add to favorites"))
 
                     // Remove button
                     Button {
@@ -328,7 +328,7 @@ struct AutoEQSearchPanel: View {
     // MARK: - Mini Toggle
 
     private func miniToggle(
-        label: String,
+        label: LocalizedStringKey,
         isOn: Bool,
         action: @escaping () -> Void
     ) -> some View {
@@ -348,7 +348,7 @@ struct AutoEQSearchPanel: View {
         }
         .accessibilityElement(children: .combine)
         .accessibilityLabel(label)
-        .accessibilityValue(isOn ? "On" : "Off")
+        .accessibilityValue(isOn ? String(localized: "On") : String(localized: "Off"))
     }
 
     // MARK: - Search Field
@@ -634,7 +634,7 @@ struct AutoEQSearchPanel: View {
             .buttonStyle(.plain)
             .onHover { starHoveredID = $0 ? id : nil }
             .animation(DesignTokens.Animation.hover, value: isStarHovered)
-            .accessibilityLabel(isFavorited ? "Remove from favorites" : "Add to favorites")
+            .accessibilityLabel(isFavorited ? String(localized: "Remove from favorites") : String(localized: "Add to favorites"))
         }
     }
 
@@ -650,7 +650,7 @@ struct AutoEQSearchPanel: View {
                 onSelect(profile)
                 onDismiss()
             } else {
-                fetchError = "Failed to load \(entry.name)"
+                fetchError = String(localized: "Failed to load \(entry.name)")
                 Task {
                     try? await Task.sleep(for: .seconds(3))
                     if fetchError != nil { fetchError = nil }

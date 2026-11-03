@@ -45,7 +45,7 @@ nonisolated extension DeviceInspectorInfo {
         guard let asbd else { return nil }
         guard asbd.mFormatID == kAudioFormatLinearPCM else { return nil }
         guard asbd.mBitsPerChannel > 0 else { return nil }
-        return "\(asbd.mBitsPerChannel)-bit PCM"
+        return String(localized: "\(asbd.mBitsPerChannel)-bit PCM")
     }
 
     /// Human-readable hog-mode owner string for the inline row.
@@ -53,9 +53,9 @@ nonisolated extension DeviceInspectorInfo {
     static func formatHogModeOwner(_ owner: pid_t, processName: String?) -> String? {
         guard owner > 0, owner != getpid() else { return nil }
         if let processName, !processName.isEmpty {
-            return "In exclusive use by \(processName) (PID \(owner))"
+            return String(localized: "In exclusive use by \(processName) (PID \(owner))")
         }
-        return "In exclusive use by PID \(owner)"
+        return String(localized: "In exclusive use by PID \(owner)")
     }
 }
 

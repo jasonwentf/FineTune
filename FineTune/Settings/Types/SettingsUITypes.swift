@@ -13,6 +13,16 @@ enum MenuBarIconStyle: String, Codable, CaseIterable, Identifiable {
 
     var id: String { rawValue }
 
+    var displayName: String {
+        switch self {
+        case .default: return String(localized: "Default")
+        case .speaker: return String(localized: "Speaker")
+        case .device: return String(localized: "Device")
+        case .waveform: return String(localized: "Waveform")
+        case .equalizer: return String(localized: "Equalizer")
+        }
+    }
+
     /// The icon name - either asset catalog name or SF Symbol
     var iconName: String {
         switch self {
@@ -55,9 +65,9 @@ enum AppearancePreference: String, Codable, CaseIterable, Identifiable, CustomSt
 
     var description: String {
         switch self {
-        case .system: return "System"
-        case .light: return "Light"
-        case .dark: return "Dark"
+        case .system: return String(localized: "System")
+        case .light: return String(localized: "Light")
+        case .dark: return String(localized: "Dark")
         }
     }
 }
@@ -87,9 +97,9 @@ enum MenuBarPopupSize: String, Codable, CaseIterable, Identifiable, CustomString
 
     var description: String {
         switch self {
-        case .compact: return "Compact"
-        case .comfortable: return "Comfortable"
-        case .spacious: return "Spacious"
+        case .compact: return String(localized: "Compact")
+        case .comfortable: return String(localized: "Comfortable")
+        case .spacious: return String(localized: "Spacious")
         }
     }
 }
@@ -149,10 +159,10 @@ enum VolumeHotkeyStep: String, Codable, CaseIterable, Identifiable, CustomString
 
     var description: String {
         switch self {
-        case .coarse:    return "Coarse (12.5%)"
-        case .normal:    return "Normal (6.25%)"
-        case .fine:      return "Fine (3.13%)"
-        case .extraFine: return "Extra-Fine (1.56%)"
+        case .coarse:    return String(localized: "Coarse (12.5%)")
+        case .normal:    return String(localized: "Normal (6.25%)")
+        case .fine:      return String(localized: "Fine (3.13%)")
+        case .extraFine: return String(localized: "Extra-Fine (1.56%)")
         }
     }
 }
