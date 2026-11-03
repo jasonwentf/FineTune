@@ -452,6 +452,9 @@ final class AudioEngine {
     /// Unpin an app by its persistence identifier.
     func unpinApp(_ identifier: String) {
         appListCoordinator.unpinApp(identifier)
+        // The app may be idle-but-kept-alive; release its tap now instead of waiting
+        // for the next app-list change.
+        scheduleStaleCleanup()
     }
 
     /// Check if an app is pinned.
@@ -1817,8 +1820,73 @@ final class AudioEngine {
         return outputUIDs.contains(defaultUID) ? defaultUID : nil
     }
 
+    /// Decides whether an idle tap should be kept alive so the app resumes through an
+    /// existing, already-gated audio path instead of leaking raw audio while a new tap is
+    /// built. Pure (no CoreAudio) so it can be unit-tested.
+    nonisolated static func shouldKeepTapAlive(
+        isPinned: Bool,
+        isProcessPresent: Bool,
+        bundleIDMatches: Bool,
+        hasBluetoothOutput: Bool,
+        keepPinnedAppsReady: Bool,
+        keepReadyOnBluetoothOutputs: Bool
+    ) -> Bool {
+        // The process must still exist and be the same app — PID reuse must not keep a
+        // stale tap (and its aggregate device) alive.
+        guard keepPinnedAppsReady, isPinned, isProcessPresent, bundleIDMatches else { return false }
+
+        // A running tap keeps the link awake and pins A2DP, which makes Bluetooth
+        // headphones drain and misbehave. Opt-in only.
+        if hasBluetoothOutput && !keepReadyOnBluetoothOutputs { return false }
+
+        return true
+    }
+
+    /// PIDs whose taps must survive their app going idle (not streaming).
+    ///
+    /// Pinned apps keep their tap — and therefore their routed, volume-gated path — warm.
+    /// That closes the window where resuming playback bypasses FineTune entirely: the app
+    /// renders straight to the device at full level until a new tap is built.
+    private func keepAlivePIDs() -> Set<pid_t> {
+        let appSettings = settingsManager.appSettings
+        guard appSettings.keepPinnedAppsReady else { return [] }
+
+        let liveAppsByPID = Dictionary(
+            processMonitor.activeApps.map { ($0.id, $0) },
+            uniquingKeysWith: { _, latest in latest }
+        )
+
+        var pids: Set<pid_t> = []
+        for (pid, tap) in taps {
+            let liveApp = liveAppsByPID[pid]
+            let hasBluetoothOutput = tap.currentDeviceUIDs.contains { uid in
+                guard let device = deviceMonitor.device(for: uid) else { return false }
+                let transport = device.id.readTransportType()
+                return transport == .bluetooth || transport == .bluetoothLE
+            }
+
+            if Self.shouldKeepTapAlive(
+                isPinned: appListCoordinator.isPinned(identifier: tap.app.persistenceIdentifier),
+                isProcessPresent: liveApp != nil,
+                bundleIDMatches: liveApp?.bundleID == tap.app.bundleID,
+                hasBluetoothOutput: hasBluetoothOutput,
+                keepPinnedAppsReady: appSettings.keepPinnedAppsReady,
+                keepReadyOnBluetoothOutputs: appSettings.keepReadyOnBluetoothOutputs
+            ) {
+                pids.insert(pid)
+            }
+        }
+        return pids
+    }
+
+    /// Re-evaluates keep-alive immediately (e.g. after the user toggles the setting).
+    func refreshKeepAliveState() {
+        scheduleStaleCleanup()
+    }
+
     private func cleanupStaleTaps() {
-        let activePIDs = Set(apps.map { $0.id })
+        // Idle-but-kept-alive taps are treated as active so they are never scheduled for teardown.
+        let activePIDs = Set(apps.map { $0.id }).union(keepAlivePIDs())
         let stalePIDs = Set(taps.keys).subtracting(activePIDs)
 
         // Cancel cleanup for PIDs that reappeared — but only if bundleID matches.
@@ -1858,7 +1926,8 @@ final class AudioEngine {
 
                 // Double-check still stale
                 let currentPIDs = Set(self.apps.map { $0.id })
-                guard !currentPIDs.contains(pid) else {
+                let keepAlive = self.keepAlivePIDs()
+                if currentPIDs.contains(pid) || keepAlive.contains(pid) {
                     self.pendingCleanup.removeValue(forKey: pid)
                     return
                 }

@@ -524,3 +524,62 @@ struct RecordingProcessTapControllerContractTests {
         }
     }
 }
+
+// MARK: - Tap Keep-Alive Decision
+
+/// A pinned app's tap stays warm while it is idle so resuming playback never leaks
+/// raw audio. The decision is pure, so it is verified here without CoreAudio.
+struct TapKeepAliveDecisionTests {
+    private func keepAlive(
+        isPinned: Bool = true,
+        isProcessPresent: Bool = true,
+        bundleIDMatches: Bool = true,
+        hasBluetoothOutput: Bool = false,
+        keepPinnedAppsReady: Bool = true,
+        keepReadyOnBluetoothOutputs: Bool = false
+    ) -> Bool {
+        AudioEngine.shouldKeepTapAlive(
+            isPinned: isPinned,
+            isProcessPresent: isProcessPresent,
+            bundleIDMatches: bundleIDMatches,
+            hasBluetoothOutput: hasBluetoothOutput,
+            keepPinnedAppsReady: keepPinnedAppsReady,
+            keepReadyOnBluetoothOutputs: keepReadyOnBluetoothOutputs
+        )
+    }
+
+    @Test("pinned idle app keeps its tap")
+    func pinnedIdleAppKeepsTap() {
+        #expect(keepAlive())
+    }
+
+    @Test("unpinned idle app is still cleaned up")
+    func unpinnedIdleAppIsCleanedUp() {
+        #expect(!keepAlive(isPinned: false))
+    }
+
+    @Test("app that quit releases its tap")
+    func quitAppReleasesTap() {
+        #expect(!keepAlive(isProcessPresent: false))
+    }
+
+    @Test("PID reused by a different app releases the old tap")
+    func pidReuseReleasesTap() {
+        #expect(!keepAlive(bundleIDMatches: false))
+    }
+
+    @Test("setting off disables keep-alive entirely")
+    func settingOffDisablesKeepAlive() {
+        #expect(!keepAlive(keepPinnedAppsReady: false))
+    }
+
+    @Test("bluetooth output is excluded by default")
+    func bluetoothOutputExcludedByDefault() {
+        #expect(!keepAlive(hasBluetoothOutput: true))
+    }
+
+    @Test("bluetooth output can be opted in")
+    func bluetoothOutputOptIn() {
+        #expect(keepAlive(hasBluetoothOutput: true, keepReadyOnBluetoothOutputs: true))
+    }
+}

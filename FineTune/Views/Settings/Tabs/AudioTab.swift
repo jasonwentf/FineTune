@@ -27,6 +27,7 @@ struct AudioTab: View {
             VStack(alignment: .leading, spacing: 24) {
                 volumeSection
                 devicesSection
+                playbackSection
             }
             .padding(.horizontal, 20)
             .padding(.vertical, 20)
@@ -45,6 +46,12 @@ struct AudioTab: View {
         }
         .onChange(of: settings.appSettings.loudnessEqualizationEnabled) { _, newValue in
             audioEngine.setLoudnessEqualizationEnabled(newValue)
+        }
+        .onChange(of: settings.appSettings.keepPinnedAppsReady) { _, _ in
+            audioEngine.refreshKeepAliveState()
+        }
+        .onChange(of: settings.appSettings.keepReadyOnBluetoothOutputs) { _, _ in
+            audioEngine.refreshKeepAliveState()
         }
     }
 
@@ -129,6 +136,33 @@ struct AudioTab: View {
                     try? await Task.sleep(for: .seconds(2))
                     deviceVolumeMonitor.refreshAlertVolume()
                 }
+            }
+        }
+    }
+
+    // MARK: - Playback Readiness
+
+    private var playbackSection: some View {
+        SettingsSection("Playback Readiness") {
+            SettingsRow(
+                "Keep Pinned Apps Ready",
+                description: "Prevents a volume spike when a paused pinned app resumes"
+            ) {
+                Toggle("", isOn: $settings.appSettings.keepPinnedAppsReady)
+                    .toggleStyle(.switch)
+                    .controlSize(.small)
+                    .labelsHidden()
+            }
+            SettingsRowDivider()
+            SettingsRow(
+                "Include Bluetooth Outputs",
+                description: "Also keep them ready on Bluetooth; keeps the link awake"
+            ) {
+                Toggle("", isOn: $settings.appSettings.keepReadyOnBluetoothOutputs)
+                    .toggleStyle(.switch)
+                    .controlSize(.small)
+                    .labelsHidden()
+                    .disabled(!settings.appSettings.keepPinnedAppsReady)
             }
         }
     }
