@@ -336,6 +336,19 @@ struct AudioEngineTapInitialStateTests {
         #expect(snap.autoEQProfileID == nil)
     }
 
+    @Test("pinned non-streaming app is pre-tapped so the first playback is already gated")
+    func pinnedIdleAppIsPrewarmed() {
+        let fix = makeFixture()
+        fix.deviceVolume.defaultDeviceUID = fix.device.uid
+        fix.engine.pinApp(fix.app)
+
+        fix.engine.applyPersistedSettings()
+
+        // Cold start: the app is present but silent. Its tap must exist *before* the
+        // first sound, otherwise that sound bypasses FineTune entirely.
+        #expect(fix.lastTap() != nil)
+    }
+
     @Test("non-streaming monitor-reported app is excluded from apps and not pre-tapped")
     func silentAppIsNotTappedBeforePlayback() throws {
         let fix = makeFixture()

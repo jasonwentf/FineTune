@@ -1088,14 +1088,47 @@ final class AudioEngine {
         }
     }
 
+    /// Apps that should have a tap provisioned — not only the ones currently streaming.
+    ///
+    /// A pinned app that is merely *present* gets its tap built ahead of playback, so the
+    /// first sound after a cold start already travels through the volume-gated path. Without
+    /// it the app renders straight to the device until a tap is built, which is the loud
+    /// first moment after boot or after FineTune restarts.
+    private var tapProvisioningApps: [AudioApp] {
+        let streaming = apps
+        guard settingsManager.appSettings.keepPinnedAppsReady else { return streaming }
+
+        let streamingIDs = Set(streaming.map(\.id))
+        let pinnedIdle = processMonitor.activeApps.filter { app in
+            !streamingIDs.contains(app.id)
+                && !settingsManager.isIgnored(app.persistenceIdentifier)
+                && appListCoordinator.isPinned(identifier: app.persistenceIdentifier)
+        }
+        return streaming + pinnedIdle
+    }
+
+    /// Pre-warming a tap keeps the output link awake. Pinned-but-idle apps routed to
+    /// Bluetooth are left alone unless the user opted in — same rule as keep-alive.
+    private func shouldSkipPrewarm(deviceUIDs: [String], isStreaming: Bool) -> Bool {
+        guard !isStreaming, !settingsManager.appSettings.keepReadyOnBluetoothOutputs else { return false }
+        return deviceUIDs.contains { uid in
+            guard let device = deviceMonitor.device(for: uid) else { return false }
+            let transport = device.id.readTransportType()
+            return transport == .bluetooth || transport == .bluetoothLE
+        }
+    }
+
     func applyPersistedSettings() {
         guard permission.status == .authorized else { return }
+
+        let provisioningApps = tapProvisioningApps
+        let streamingIDs = Set(apps.map(\.id))
 
         // Warm the AutoEQ cache for every (app, device) selection so that subsequent
         // tap activations can apply correction synchronously inside activate(initial:)
         // instead of falling back to the async resolve path. Imported profiles are
         // already loaded by AutoEQProfileManager.init.
-        let selectedProfileIDs: Set<String> = Set(apps.compactMap { app -> String? in
+        let selectedProfileIDs: Set<String> = Set(provisioningApps.compactMap { app -> String? in
             let deviceUID = appDeviceRouting[app.id] ?? deviceVolumeMonitor.defaultDeviceUID
             guard let deviceUID, let selection = settingsManager.getAutoEQSelection(for: deviceUID) else { return nil }
             return selection.isEnabled ? selection.profileID : nil
@@ -1107,7 +1140,7 @@ final class AudioEngine {
             }
         }
 
-        for app in apps {
+        for app in provisioningApps {
             guard !appliedPIDs.contains(app.id) else { continue }
             guard !settingsManager.isIgnored(app.persistenceIdentifier) else { continue }
 
@@ -1128,6 +1161,10 @@ final class AudioEngine {
                     let availableUIDs = savedUIDs.filter { deviceMonitor.device(for: $0) != nil }
                         .sorted()  // Deterministic ordering
                     if !availableUIDs.isEmpty {
+                        if shouldSkipPrewarm(deviceUIDs: availableUIDs, isStreaming: streamingIDs.contains(app.id)) {
+                            logger.debug("Skipping prewarm for \(app.name): Bluetooth output not opted in")
+                            continue
+                        }
                         logger.debug("Restoring multi-device mode for \(app.name) with \(availableUIDs.count) device(s)")
                         ensureTapWithDevices(for: app, deviceUIDs: availableUIDs)
 
@@ -1179,6 +1216,10 @@ final class AudioEngine {
                 }
                 deviceUID = defaultUID
                 logger.debug("App \(app.name) device temporarily unavailable, using default: \(deviceUID)")
+            }
+            if shouldSkipPrewarm(deviceUIDs: [deviceUID], isStreaming: streamingIDs.contains(app.id)) {
+                logger.debug("Skipping prewarm for \(app.name): Bluetooth output not opted in")
+                continue
             }
             appDeviceRouting[app.id] = deviceUID
 
